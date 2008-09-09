@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ItemModels" targetNamespace="http://dol.oecken.net/ItemCreator/schemas/ItemModels.xsd" xmlns:mstns="http://dol.oecken.net/ItemCreator/schemas/ItemModels.xsd" xmlns="http://dol.oecken.net/ItemCreator/schemas/ItemModels.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ItemModels" msdata:IsDataSet="true" msdata:Locale="" msprop:Generator_UserDSName="ItemModels" msprop:Generator_DataSetName="ItemModels">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Models" msprop:Generator_UserTableName="Models" msprop:Generator_RowDeletedName="ModelsRowDeleted" msprop:Generator_RowChangedName="ModelsRowChanged" msprop:Generator_RowClassName="ModelsRow" msprop:Generator_RowChangingName="ModelsRowChanging" msprop:Generator_RowEvArgName="ModelsRowChangeEvent" msprop:Generator_RowEvHandlerName="ModelsRowChangeEventHandler" msprop:Generator_TableClassName="ModelsDataTable" msprop:Generator_TableVarName="tableModels" msprop:Generator_RowDeletingName="ModelsRowDeleting" msprop:Generator_TablePropName="Models">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Expansion" msprop:Generator_UserColumnName="Expansion" msprop:Generator_ColumnVarNameInTable="columnExpansion" msprop:Generator_ColumnPropNameInRow="Expansion" msprop:Generator_ColumnPropNameInTable="ExpansionColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Categories" msprop:Generator_UserTableName="Categories" msprop:Generator_RowDeletedName="CategoriesRowDeleted" msprop:Generator_RowChangedName="CategoriesRowChanged" msprop:Generator_RowClassName="CategoriesRow" msprop:Generator_RowChangingName="CategoriesRowChanging" msprop:Generator_RowEvArgName="CategoriesRowChangeEvent" msprop:Generator_RowEvHandlerName="CategoriesRowChangeEventHandler" msprop:Generator_TableClassName="CategoriesDataTable" msprop:Generator_TableVarName="tableCategories" msprop:Generator_RowDeletingName="CategoriesRowDeleting" msprop:Generator_TablePropName="Categories">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" type="xs:string" />
+              <xs:element name="name" msprop:Generator_UserColumnName="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Expansions" msprop:Generator_UserTableName="Expansions" msprop:Generator_RowDeletedName="ExpansionsRowDeleted" msprop:Generator_RowChangedName="ExpansionsRowChanged" msprop:Generator_RowClassName="ExpansionsRow" msprop:Generator_RowChangingName="ExpansionsRowChanging" msprop:Generator_RowEvArgName="ExpansionsRowChangeEvent" msprop:Generator_RowEvHandlerName="ExpansionsRowChangeEventHandler" msprop:Generator_TableClassName="ExpansionsDataTable" msprop:Generator_TableVarName="tableExpansions" msprop:Generator_RowDeletingName="ExpansionsRowDeleting" msprop:Generator_TablePropName="Expansions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" type="xs:string" />
+              <xs:element name="name" msprop:Generator_UserColumnName="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="version" msprop:Generator_UserTableName="version" msprop:Generator_RowDeletedName="versionRowDeleted" msprop:Generator_RowChangedName="versionRowChanged" msprop:Generator_RowClassName="versionRow" msprop:Generator_RowChangingName="versionRowChanging" msprop:Generator_RowEvArgName="versionRowChangeEvent" msprop:Generator_RowEvHandlerName="versionRowChangeEventHandler" msprop:Generator_TableClassName="versionDataTable" msprop:Generator_TableVarName="tableversion" msprop:Generator_RowDeletingName="versionRowDeleting" msprop:Generator_TablePropName="version">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="version" msprop:Generator_UserColumnName="version" msprop:Generator_ColumnPropNameInRow="version" msprop:Generator_ColumnVarNameInTable="columnversion" msprop:Generator_ColumnPropNameInTable="versionColumn" type="xs:string" default="1.0.0.0" minOccurs="0" />
+              <xs:element name="doUpdate" msprop:Generator_UserColumnName="doUpdate" msprop:Generator_ColumnPropNameInRow="doUpdate" msprop:Generator_ColumnVarNameInTable="columndoUpdate" msprop:Generator_ColumnPropNameInTable="doUpdateColumn" type="xs:boolean" default="true" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Models" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

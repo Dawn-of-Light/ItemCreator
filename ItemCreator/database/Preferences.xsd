@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Preferences" targetNamespace="http://dol.oecken.net/ItemCreator/schemas/Preferences.xsd" xmlns:mstns="http://dol.oecken.net/ItemCreator/schemas/Preferences.xsd" xmlns="http://dol.oecken.net/ItemCreator/schemas/Preferences.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Preferences" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Preferences" msprop:Generator_DataSetName="Preferences">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Basic" msprop:Generator_UserTableName="Basic" msprop:Generator_RowDeletedName="BasicRowDeleted" msprop:Generator_RowChangedName="BasicRowChanged" msprop:Generator_RowClassName="BasicRow" msprop:Generator_RowChangingName="BasicRowChanging" msprop:Generator_RowEvArgName="BasicRowChangeEvent" msprop:Generator_RowEvHandlerName="BasicRowChangeEventHandler" msprop:Generator_TableClassName="BasicDataTable" msprop:Generator_TableVarName="tableBasic" msprop:Generator_RowDeletingName="BasicRowDeleting" msprop:Generator_TablePropName="Basic">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="askSaveToFile" msprop:Generator_UserColumnName="askSaveToFile" msprop:Generator_ColumnVarNameInTable="columnaskSaveToFile" msprop:Generator_ColumnPropNameInRow="askSaveToFile" msprop:Generator_ColumnPropNameInTable="askSaveToFileColumn" type="xs:boolean" default="true" minOccurs="0" />
+              <xs:element name="checkApplicationUpdates" msprop:Generator_UserColumnName="checkApplicationUpdates" msprop:Generator_ColumnPropNameInRow="checkApplicationUpdates" msprop:Generator_ColumnVarNameInTable="columncheckApplicationUpdates" msprop:Generator_ColumnPropNameInTable="checkApplicationUpdatesColumn" type="xs:boolean" default="true" minOccurs="0" />
+              <xs:element name="checkDatabaseUpdates" msprop:Generator_UserColumnName="checkDatabaseUpdates" msprop:Generator_ColumnPropNameInRow="checkDatabaseUpdates" msprop:Generator_ColumnVarNameInTable="columncheckDatabaseUpdates" msprop:Generator_ColumnPropNameInTable="checkDatabaseUpdatesColumn" type="xs:boolean" default="true" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MySQL" msprop:Generator_UserTableName="MySQL" msprop:Generator_RowDeletedName="MySQLRowDeleted" msprop:Generator_RowChangedName="MySQLRowChanged" msprop:Generator_RowClassName="MySQLRow" msprop:Generator_RowChangingName="MySQLRowChanging" msprop:Generator_RowEvArgName="MySQLRowChangeEvent" msprop:Generator_RowEvHandlerName="MySQLRowChangeEventHandler" msprop:Generator_TableClassName="MySQLDataTable" msprop:Generator_TableVarName="tableMySQL" msprop:Generator_RowDeletingName="MySQLRowDeleting" msprop:Generator_TablePropName="MySQL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Host" msprop:Generator_UserColumnName="Host" msprop:Generator_ColumnVarNameInTable="columnHost" msprop:Generator_ColumnPropNameInRow="Host" msprop:Generator_ColumnPropNameInTable="HostColumn" type="xs:string" default="localhost" minOccurs="0" />
+              <xs:element name="Port" msprop:Generator_UserColumnName="Port" msprop:Generator_ColumnVarNameInTable="columnPort" msprop:Generator_ColumnPropNameInRow="Port" msprop:Generator_ColumnPropNameInTable="PortColumn" type="xs:unsignedInt" default="3306" minOccurs="0" />
+              <xs:element name="Database" msprop:Generator_UserColumnName="Database" msprop:Generator_ColumnVarNameInTable="columnDatabase" msprop:Generator_ColumnPropNameInRow="Database" msprop:Generator_ColumnPropNameInTable="DatabaseColumn" type="xs:string" default="dol" minOccurs="0" />
+              <xs:element name="UserID" msprop:Generator_UserColumnName="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" type="xs:string" default="doluser" minOccurs="0" />
+              <xs:element name="Password" msprop:Generator_UserColumnName="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnPropNameInTable="PasswordColumn" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Enabled" msprop:Generator_UserColumnName="Enabled" msprop:Generator_ColumnVarNameInTable="columnEnabled" msprop:Generator_ColumnPropNameInRow="Enabled" msprop:Generator_ColumnPropNameInTable="EnabledColumn" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="ItemTemplateTable" msprop:Generator_UserColumnName="ItemTemplateTable" msprop:Generator_ColumnVarNameInTable="columnItemTemplateTable" msprop:Generator_ColumnPropNameInRow="ItemTemplateTable" msprop:Generator_ColumnPropNameInTable="ItemTemplateTableColumn" type="xs:string" default="ItemTemplate" minOccurs="0" />
+              <xs:element name="SpellTable" msprop:Generator_UserColumnName="SpellTable" msprop:Generator_ColumnVarNameInTable="columnSpellTable" msprop:Generator_ColumnPropNameInRow="SpellTable" msprop:Generator_ColumnPropNameInTable="SpellTableColumn" type="xs:string" default="Spell" minOccurs="0" />
+              <xs:element name="LootTemplateTable" msprop:Generator_UserColumnName="LootTemplateTable" msprop:Generator_ColumnVarNameInTable="columnLootTemplateTable" msprop:Generator_ColumnPropNameInRow="LootTemplateTable" msprop:Generator_ColumnPropNameInTable="LootTemplateTableColumn" type="xs:string" default="LootTemplate" minOccurs="0" />
+              <xs:element name="MobXLootTemplateTable" msprop:Generator_UserColumnName="MobXLootTemplateTable" msprop:Generator_ColumnVarNameInTable="columnMobXLootTemplateTable" msprop:Generator_ColumnPropNameInRow="MobXLootTemplateTable" msprop:Generator_ColumnPropNameInTable="MobXLootTemplateTableColumn" type="xs:string" default="MobXLootTemplate" minOccurs="0" />
+              <xs:element name="cellDetection" msprop:Generator_UserColumnName="cellDetection" msprop:Generator_ColumnPropNameInRow="cellDetection" msprop:Generator_ColumnVarNameInTable="columncellDetection" msprop:Generator_ColumnPropNameInTable="cellDetectionColumn" type="xs:boolean" default="true" minOccurs="0" />
+              <xs:element name="ArtiID" msprop:Generator_UserColumnName="ArtiID" msprop:Generator_ColumnPropNameInRow="ArtiID" msprop:Generator_ColumnVarNameInTable="columnArtiID" msprop:Generator_ColumnPropNameInTable="ArtiIDColumn" type="xs:boolean" default="true" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

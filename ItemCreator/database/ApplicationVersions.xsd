@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ApplicationVersions" targetNamespace="http://dol.oecken.net/ItemCreator/schemas/ApplicationVersions.xsd" xmlns:mstns="http://dol.oecken.net/ItemCreator/schemas/ApplicationVersions.xsd" xmlns="http://dol.oecken.net/ItemCreator/schemas/ApplicationVersions.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ApplicationVersions" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ApplicationVersions" msprop:Generator_DataSetName="ApplicationVersions">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Database" msprop:Generator_UserTableName="Database" msprop:Generator_RowDeletedName="DatabaseRowDeleted" msprop:Generator_RowChangedName="DatabaseRowChanged" msprop:Generator_RowClassName="DatabaseRow" msprop:Generator_RowChangingName="DatabaseRowChanging" msprop:Generator_RowEvArgName="DatabaseRowChangeEvent" msprop:Generator_RowEvHandlerName="DatabaseRowChangeEventHandler" msprop:Generator_TableClassName="DatabaseDataTable" msprop:Generator_TableVarName="tableDatabase" msprop:Generator_RowDeletingName="DatabaseRowDeleting" msprop:Generator_TablePropName="Database">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="filename" msprop:Generator_UserColumnName="filename" msprop:Generator_ColumnPropNameInRow="filename" msprop:Generator_ColumnVarNameInTable="columnfilename" msprop:Generator_ColumnPropNameInTable="filenameColumn" type="xs:string" />
+              <xs:element name="local_version" msdata:Caption="online_version" msprop:Generator_UserColumnName="local_version" msprop:Generator_ColumnPropNameInRow="local_version" msprop:Generator_ColumnVarNameInTable="columnlocal_version" msprop:Generator_ColumnPropNameInTable="local_versionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="online_version" msprop:Generator_UserColumnName="online_version" msprop:Generator_ColumnPropNameInRow="online_version" msprop:Generator_ColumnVarNameInTable="columnonline_version" msprop:Generator_ColumnPropNameInTable="online_versionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="update" msprop:Generator_UserColumnName="update" msprop:Generator_ColumnPropNameInRow="update" msprop:Generator_ColumnVarNameInTable="columnupdate" msprop:Generator_ColumnPropNameInTable="updateColumn" type="xs:boolean" default="true" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Application" msprop:Generator_UserTableName="Application" msprop:Generator_RowDeletedName="ApplicationRowDeleted" msprop:Generator_RowChangedName="ApplicationRowChanged" msprop:Generator_RowClassName="ApplicationRow" msprop:Generator_RowChangingName="ApplicationRowChanging" msprop:Generator_RowEvArgName="ApplicationRowChangeEvent" msprop:Generator_RowEvHandlerName="ApplicationRowChangeEventHandler" msprop:Generator_TableClassName="ApplicationDataTable" msprop:Generator_TableVarName="tableApplication" msprop:Generator_RowDeletingName="ApplicationRowDeleting" msprop:Generator_TablePropName="Application">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="local_version" msprop:Generator_UserColumnName="local_version" msprop:Generator_ColumnPropNameInRow="local_version" msprop:Generator_ColumnVarNameInTable="columnlocal_version" msprop:Generator_ColumnPropNameInTable="local_versionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="online_version" msprop:Generator_UserColumnName="online_version" msprop:Generator_ColumnPropNameInRow="online_version" msprop:Generator_ColumnVarNameInTable="columnonline_version" msprop:Generator_ColumnPropNameInTable="online_versionColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DatabaseKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Database" />
+      <xs:field xpath="mstns:filename" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

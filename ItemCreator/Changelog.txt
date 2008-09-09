@@ -1,0 +1,37 @@
+19th of August 2008 version 2.1.0.1
+- fixed error while searching a model-id
+
+2nd of April 2008 version 2.1.0.0
+- added Localization, available languages are English and German
+- redesigned update-procedure, have a look at the preferences to set: check for new versions on startup
+- fixed problem with single quoted strings
+- fixed problem with NULL-Field values
+- minor fixes
+
+5th of February 2008 version 2.0.2.0
+- Added LootTemplate and MobXLootTemplate support for Items. You are now able to assign or edit Items to pre-defined mobs. Enjoy!
+
+12th of December 2007 version 2.0.1.1
+- custom fields in the ItemTemplate-Table are now supportet. A default value of the customfield is needed.
+
+11th of December 2007 version 2.0.1.0
+- fixed some errors
+- added new MySQL options, for Databases without the default columns like ArtiID. Simply check the preferences.
+
+25th of November 2007 version 2.0.0.2
+- fixed a problem by selecting a spell
+
+25th of November 2007 version 2.0.0.1
+- minor bugfix
+
+24th of November 2007 version 2.0.0.0
+- Complete rewrite beginning from the basics
+- New Updating Feature, which can also Update the App itself.
+There are not really a lot of new Features, but I hope it will be a little bit more stable. Have Fun!
+
+12th of March 2007 version 1.0.0.1
+- Layout Modifications. Added a tabbed Pane. General & Visual Informations on tab1, Magical Bonusses & Proc/Spell/Poision-Options on tab2.
+- Added Columns "Value" and "Damage" to the SpellList-Window
+
+11th of March 2007 version 1.0.0.0
+- first release

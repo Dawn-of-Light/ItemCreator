@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>675, 541</value>
+  </data>
+  <data name="neuToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAQ9JREFUOE+t09lq
+        wkAUBmBfyr5DfY32jaReSOmFCyKCgkKLFrVUBZeKiEbshqRuaNw1xiXmLxMJBJ0Zc+GBw9zMfDPnHMZm
+        u1ZE35s4zXCqjmC8Al+sgHLjD9y7yGFWPIbecOO45yORtMAEHnxxJHL1IyKI9JeEXqtMwOl50Q8bSS0l
+        8PzBBPbqAQQxICrgjeapgKZpkJUdBmNZB+y3d/QSnsIZKrDdqZjMFYj9OR9wB1NngHrQsJC36EkrfIkT
+        PuDyJ84AZbOHNF2j1Z2h9i3xAVKfOUjjZssN2oMFmq0xSkLfOmBu3E97iurnENlKxzpgbpzwO0Kh1kOy
+        KFoDjHmzVuYYjRmTDZfyWh9Yd/4B2Mz2w1z7EGUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="öffnenToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAlpJREFUOE+tk21I
+        k1EYhif0oyA0sqIQCix/+GcQFFH9CCmiUBTLLEjShJofVBgL2fxoU9Pp5ubUlS5rU9f8rCyjsA+pUCRC
+        TR1ppmVFUSlmhq78unrnQF1KGHTg/nEOz30993PO+7qJFrmUeiv2n+Mij+XLRLLYULdF2pxlEVIDcw0p
+        AsyxD5fmI/rQ94pqi26eOlsfuZj+7BgSm01QdA4ih7m73Yx9qGpavwatjPebqCzOprPt8YKQgzFagqL0
+        BEjyEFWVaBkdLHMxT34uYNwWR9nVTEoL0zHlp2DMSeaSRk6eKt4VWm5WM/rVPNN5SjDTLQebZEHNA1wr
+        UvHjk3E6tsNcV62e1r3KLGqtKm6WplNpSsVqVFJsOM8VfSKFWjkGtcyZptSYzvC7XByx3zQoqCnTMvlG
+        CX1prnornPUmQJcUXsbSVhGK5bIOkcmQyveeTHiv4VZ5Nk33Nc6iuSO8CIfmECYa/bE/8ON1iRipJNh5
+        F0V6Bd86lfQ1JlFj1TDVq4COKCegLVIwHmGiKRB7/V6G7+5koHozymgfYRy5E1CgTWKgXcZ1i5qWp0KS
+        rjgBcAJawph6FszYk/2M1O1isGYLX8p9ab6wgqP+3rMvYciS01GfzA1LFvQkQ6sQ9/khxhoCGHnox1Dt
+        NvorxXw0b8Km8UQh2cip6GOzgNyMeKqKM7HdjqFZJ5pRk2YJ9aql3EnxoCJxNaZ4Ly6e3UDY3O6OEXRp
+        59ApTpIhiyDh9GHORAZyPHQPB/ZtZ/cOMVvFPvh6e7F+3SrWrHRnraf7Xz/xf/rJ/kvxb84I3U1y+9/W
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="speichernToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAixJREFUOE+tk91L
+        k3EUx/cvdN9N0EW3NTWGa7EaPOUcyqphWBG9PZEv5dJlmqhYmUYtXyBb4dJJy+kknFT4BqZIjaFMJUsz
+        V7TEoabYRDD49ju/6Pm1Mi+iH5zLz+c855zvo1L9j/fsaRRUvvZltHmX8Ni9gMaGCO47ZlBb8wn22yHc
+        KJ9CackECgteIy93FBfOB6H0JrC3B6ipXsVGb2V1Dca0XhxOe8JLEXhbF7mgsuLLX3mCIwsr2G1+DrVa
+        huWQRwjcj+a5oLTk87qCn/D78CLiTD4UXJ7GAXOTEDjrZ7ngku3dH4Jf4ZHJCLZJXlhzxpGa4hSCurth
+        LsjOGo0R/A4PBsPYrHdDlgMwmRxCUF31kQvkMwFFsB7c4/+ATYkNOHL0BZKSaoXgZuU0urvATgkcP/kK
+        lmMDfNu0MJqZPps6/4D7cNDSCUmyC8HVskl0+MAyADS5vrG7f0X59Tm+VFoYzZyZEVTg5NR2GAwVQnCl
+        cByeZuChc40FJwpjek5MmU/YkH6uiHdOTmHwfg/0+jIhsOWNMRiouhPlnUnAQoI4rYSht7MYm5qDnHsN
+        e41tHNbucUGnKxICiqXjHpTPJgHBZ/Nv4U1oHqGZJVwstiNe72JwI+J3PYA2MV8IMjOG2dzLfOatBg+2
+        7JDQ0tEPX9cguvv8GHg5hH0mC9S6eiQweLumDhqNVQgo06dP9fN4UsIoJHRnOhVtmxZGM1NXKoJ3JmTH
+        Cv71r/4OTrQ4xWMwWlcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="exportButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAh1JREFUOE+t0+9L
+        EwEcx3H/l5J+PQgfFPSkX09KK02KodAPsoQwWWEwpBAJpxbGMI1ZmlkDJQrEB8EoyChtSBCilYrZ1G23
+        eba1ubm724/z3d3N9KQnhR18H97r+/kc38vL2+zT8nyR39PucvMvY+zWX3a9B3uviJJSScoq8WSWaCJD
+        eCmD+DONEE7hE1N4gwrTfpnJ+SR7Ci9iAE19OeBGj4isA4pKQloHbI8WGP+eYF5U1oCJOWkdqH8qGoC1
+        I4SczgHmBNcfChTbPuD5HNEAWUsgMWFOYOtaoGsQKhxBo4K+8ZrTx2XHNOcbx6hq/caVTpldZf0Mj0eM
+        ChNzpgrV90Pcc4OlSTAq1DwI0DeU4fGgSmP/CnXP4Gq3QmmDYCDvRsMaYKqgb24cgKI6P1Jqheo2Lx2v
+        stT2qpxrz1J+N84pu8Dxm1McsnoM5KsZKGsWqNW2HLTpgEplyyR3BlTOtMpYbocpqfdy1DbGYeswBRYX
+        L4f8GmCqUHwrQHUP7KvxIWkf8GzDKFuOtJF/rJNtJS52nH7Bgaq37Dz5BLcnwJRP2phgv7b5gnMV0BIk
+        5CyxZIZIPMNiNE3+iW62F3fzeiTATEDWAHljAh0odyhrCZa1G1hazuaAWJqthU7efBSYDSnMCDngy6yp
+        gh691P6D3RUjRgX9iGKrgBjNENSu0L+o5AAjgfQnUFD5yQD2Fl0yRj/Tv5nN/of/5/1f57FUJV5wpZcA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="exportButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 22</value>
+  </data>
+  <data name="exportButton.Text" xml:space="preserve">
+    <value>Item exportieren/speichern</value>
+  </data>
+  <data name="checkItemButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAcVJREFUOE+tk9sr
+        g3EYx/03LtwqF5Sa44VDiiLlRk3JoeSCG1cuJA25kHMks5NzGDPvO6fRZk5jZJhtIdZmuZBmX55HUz/i
+        am89N2/v5/P8ft/neRMS4vHMWVygmpXPML3uhGHtGLrVQ2iM+1Av2jC+sIux2R2MTG9iSG/BgHYdQl+C
+        yxs6UVbfgZKaNhRVtSK/sgW5Fc3IKG1EenEdUgurkZKnREuXGpL9ShTMSKcMR6KRf+v1LQLtygEsjmtR
+        MGU+4c7/CW5ufQi/fAm2Dj2iQG864mP/JVg2riCnoAztqh7OxXriFQUao4PvTIJQOCSIJHkDyckpDPv8
+        71Av2WA784sCSpoCI7hSWcsfB5+D0OkMSE1L/4bd7ujnRPZwcHEnCsbndzltOgHBmYosqFRdUCiyBdjp
+        jPI4nVcPomB0ZptHFcuAJImJSb9guz3Ku3DueRQFw4YNnjMJaFSUduzOdGzqTPDONjCol+H2BUTBoE7i
+        JYnBT4F3DuwnLEtAv8aMm7ugKOibNEPZ1M0zpuIV/kybAoutMHUmuHfCBO/Dsyigl8tbLpisF5DtbliP
+        PHC4/BzWpTcAz30I/sewUPH4B+Pj+ADGHSTbfhWXUQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="checkItemButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="checkItemButton.Text" xml:space="preserve">
+    <value>überprüfe Item</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 25</value>
+  </data>
+  <data name="toolStripMenuItem5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAAaJJREFUOE+Nkk1LAkEYx5egU9Sla9AX6NKhLlH3IujSoXtBn0EI+gB5qVBIKyIMtEDo
+        BUIhK6qDSUj4gqYloilmvqa5rrr/Zlx3dkU0B/48z87O/zfzPDMcAE7SOg8sB2AkqYdIXIoAK4LyX17X
+        HiVzYPhC0NBUB1yR6Jfy5lx59rQXRAKEhl6Y4YhMnXOSmUDywRlYHV5YbG6YLp1UW2pgEyBoSdARbdNP
+        OszSSQxEZnkO2D+7w/TCWhtEOoGfqyE5KmKnVf/HIHBLcn4SiI21oGQPkw32J68M0VKvBKgvulgJdEey
+        O+sJNhlg9/i6aZalAEpz98xwQADhAaWJ2GOAWr0BCpFBCoCeIjOxgdCIHlYCiI8DGQ1QMjKzKIooVwSk
+        MuUmYGp+lf5rlcDeArhD6wMzqZOqUEe2UEE0WegNMFgcHYB6Q0SxXEUiXcJbNNsboD+xdwAqfA3p3C8i
+        n3l4QuneAFqfetDG5X94xFJFBCIZuHzJ/gHqxoVjObwGv/DojvcPUDfO9/4NpyeBm+dofwD5vrvFrtco
+        3zFd8J/oO/gDpYIVhUFyWDsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="toolStripMenuItem5.Text" xml:space="preserve">
+    <value>Neues Item</value>
+  </data>
+  <data name="fromFileToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAAtRJREFUOE91k1lIlFEYhv+gi64MKqKIiqjoIpACQyq6kPaFiCjLhBajxYwiyaTJbNTc
+        xyVrKq0cl5wxHdKasN0iNCO1sqYstzHLJfdy+ccZZ57m/8fSyg68HL5zzvuc94NzxgDC30OV2yYvWqx2
+        QbTYhH7RJvSZB4XeoVmqpXVpX5AAfys2p5WMZ3DtiR31/UHiDFbC9AMoskT8U/vwS+5ln7oHd9/X/5ol
+        mASQFJ7VQpCmEf9LDeyPr8M7vJpNQZWsDDCy7EjF/wG6gjIM5fwhCdjRM0hTpxXTNwuVXwdYtHbv6AlG
+        AvJf2tCXOFrIbKaly8rnVgufGgeoqDc7AfrrCdscYqTy8rTkScbnFnTPzKQX9nLiyhe+tFupbrZgbDBT
+        VjsMoOptGmJ3LgOdWqxtGnLS49AbHpPxuJcr97pRGzo4mGiirsXCB0f0VyaRF1X9zgS5GfH0d+pkgGS2
+        tVzGajyGLjWazOQINBdCSUkM5pJKwfmoQN6YzLysFimqHAJkp8XS35om3253mKlSgPHAqJIApTUizz+K
+        PH3f50yQdTWKnqYU+XYJcF8fK+tuTgwGbRR5mRFoU0JIV5/h2rkgkuMVqGNPymlkQGZKBD8+J8nR64qU
+        5OvisdWFQP3ZYZkcde0p+HgcPvhRccOTHV6eToBGHcb3mmhoUHErO46SByrnwZFtlG9hsHg94kMPqjNc
+        Obxz9fejPhvny9/g6jklXZUh1BefJl+rwl6rhHcHnYAKHyjfjli4ih8FS2nXLyTEdy5eKyYl/nr+gjpG
+        wbvCYG5ej4GaYHi9C0q3YinaQN8jD7oN7jSmzcGomojywGyWuU3HbZ7LvN+ApMhActOjMd4+RHmC8Fsl
+        qrEURo3jTuh4NIHTuOg/E+91s+zuC2asG/n5hISzASQo9xN5cjenjmzD0Rt7PFewec1ili9xZZHrXGZM
+        ncTkCS5Mmeji8P75/H8CP9De73Pm5pMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="fromFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="fromFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>aus Datei</value>
+  </data>
+  <data name="loadItemFromDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="loadItemFromDatabase.Text" xml:space="preserve">
+    <value>von MySQL-Datenbank</value>
+  </data>
+  <data name="toolStripMenuItem6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAAn9JREFUOE+lk2tI01EYxhf0oU8WqVEIRpaIBWJgSPUhROmippS3QkkTylsXDMW8ts3b
+        1G06daVibuqaOq0sxbBCKBSJ0PJCialZUFSKqaGSt1//TbIsww8deOBwznl+5zkv71kHiP5rGAFrKb1Q
+        5ypR6bmaVU6m2kCiXJv007Om2XgwJEaNT4QiyDi/GF9mKRVgsWkav+CYQkR1utwAQfypphqZ4l/JIhOL
+        jvtGKfCOyDMB6O/WMjNea9L3MT1zIxoM5QrqdWnS1SA+kUq8w1V4hhUgqq1QMj1WtcK88KmIud5oqsqy
+        qCzOQFMopSQvhRvyBApkcQLzV91E1docpr9ol29eFMz0J0Bv2Kr6C3CrVMa3jyWm2EZzc12OSQ8M2TTo
+        ZdytzMCgSUVfIqFcfY2bqiSKlQmoc+JNaUSVJRlMvsvHGHuoVUx9lZKFIQkMp63UW2FtMBH6YuBVFF01
+        /lwO9aoQadSpTAxkwXs596oVtD+ULx36/Qkvg6HDl/k2D2YeufCmwoELZ45MCIA9olKVmK+vJQy3JVOv
+        l7M4KIae8CVAV6hgPMV8uxczLYeZbDrIaN1eJBG2nHazyDN1cZEymdHueG7rcuh8KiTpixYA56AziMVn
+        J5h9coyp5kOM1TvxudqejvRNBHrY4GRnZmcCqLMT6GlJ4Y4uGwZS4IUQ97kfs62eTD12YbzBmRGDAx+0
+        u+iVmyMO24njbqvG5VbOz4yjtjyL3vuRdOSKltUuX0+LbAON0o3UJFmiibPi+pXtBLrvWHR2tHZfBuSm
+        xZIrPk9mfAiJlwKMleWsvxsnj+7H9YAD+xxssbexwnqbBVs2m7HV3GxlI631E9fa/wGRpaRpa3TTbQAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="toolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="toolStripMenuItem6.Text" xml:space="preserve">
+    <value>Item laden</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 6</value>
+  </data>
+  <data name="toolStripMenuItem7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAAjJJREFUOE+lk91L01EYx/NP6L4boYtua2oM52Q5+JVzKMuGYUWk9os0S9NlmqhYmUYt
+        XyCd4tJJq9UknFTkC5giJWIsJfMtp7jE4Ss6EQy+necEO66sizzw/C4OfD7PeV5+IQD27emQ4M1rPyhc
+        betoda7hmX0ZzU0+1FvmUVM9B/NDD+6VTaGkeBwF+V+QmzOMa1fdDGXJ6UNgdxdQXbVFl389m1vb0CV1
+        43TSKx4BgfPlKhdUlK/8E/YtbyLa8BYKhQzjKYcQ2J8ucUFJ8fddBZSZ4G/eVYTpXci/OY2ThhYhsDYu
+        cMEN0+Qfgp3w5wkfDklOZGeNIiHeKgS1j71ckHllOEjwO9zv9uKAxg5ZHoRebxGCqspZLpAvDgYEu8Fd
+        AzPYH9mEM2ffIza2RgjuV0yjswNslMD5lI8wnuvj3aaGUc30bMr8C+5BovEdJMksBLdLJ9DuAtsBoMX2
+        g819A2V3F3lTqWFUc0a6OwDHJbRBqy0XglsFo3A8B55Yt9ni+KFLzgoKwwUTki8X8sxx8Qw+4YBGUyoE
+        ptwRBgOVj/w8MwnYeiNMJWFobAEjU4uQc+4gRtfKYdUxG9TqQiGgtbTUIfBsEhB8Ke8BvnqW4Jlfw/Ui
+        M8I1NgY3IzyqAarIPCHISP/E6l7nNR/UOhB6RMKL9l64OvrR2TOAvg9DOK43QqFuRASDDytroVRmBwkS
+        01J7+XrShtGS0JxpVNRtahjVTFkpCD4akSkE9FP8b/wEuMDBOdcQbKsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="toolStripMenuItem7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="toolStripMenuItem7.Text" xml:space="preserve">
+    <value>Item speichern</value>
+  </data>
+  <data name="toolStripMenuItem8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAAhxJREFUOE+lkutLk2EYxutP6Wt/QYZDp/M03cHDZofZ1DUFXZZuAw9g5dIOloKuyKzc
+        LM1lZQyzk5aKIaFghxGV5ZeKoD40orLyw689j7aX6aygB64vD+/1u+7ree+NwIb/OgKwWn0XX+P3v+RM
+        13O8nSGOtz7C0zRLQ/00TucUjopxdlmGIrZIeDyAMN8bg86O7+Kj6Pm6uMThY89wuXopNAfWAv6U7HY/
+        oHrvJHZbEJc7iNk0sBawXvK3xZ+c61mgpsaH0XAeR9UkebkXFMDfOlc57lNiHcZaPCABJfY7GPRnFcB6
+        yZ+//KDY9hC1ej+mggH27JtCr+vGbAmizfIqgO7Ia9++tURL88fogwnzwrswxp0TWIr6yTX2UFo2Srb2
+        FLr8QdLTWhWAtyNEMLiIy/lCAqT5bZiZ0HsSDDdkZ5FcWDRMZkY7mux+UtQeBSD+8+XBME73EzmycccE
+        WyLGTakBNmdekZ1Fsr7gKprUI6g0PlSJ9QrgkGcWf+8HTne94UT7PE3NIWobZnBUT1FaPio7LydfQp18
+        kK0JLqnoIokNE+a29lck64qjSs/fjZDovJzsjyb/XkC5iWI921aSBcBiq6Dv2gjTc4/JNJXLzurkAzHJ
+        MYDKynE8LU/Jsd4lMSOP2sYW5kLzDI3cRJWStdK5To68WvKizD5m377t+qeIMJkCGI0+crQnSdMcJSmp
+        MW5yzATxyP969wsj3Z5bZZr4EQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="toolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="toolStripMenuItem8.Text" xml:space="preserve">
+    <value>Item speichern als ...</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 6</value>
+  </data>
+  <data name="toolStripMenuItem9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="toolStripMenuItem9.Text" xml:space="preserve">
+    <value>Beenden</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>Datei</value>
+  </data>
+  <data name="preferencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 22</value>
+  </data>
+  <data name="preferencesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 22</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Language/Sprache</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="checkForUpdatesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 22</value>
+  </data>
+  <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>suche nach Update</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmBJREFUOE+dk01M
+        E1EQx/fk0ZNevXjBg3qrFz2QYDz4dTKQgBygTVRiavw2JiaaaIUgmLRIxBiNSjGY0kixbUgaPmvZVltK
+        7LZgoabfpaUrtLVFqH/nbQ3SGoxxksm+mTfzm5n33nJchfhDixAz37BZsoU1TDh8qIwts6PJZeSyKxt5
+        vNOLmuom6N9ZN3w/aOVZiP8JCsZSEJeWyqqeqO2gwNOoOtxT5meGzuIuh0QiYSnoO2lmrRTP1tqpVaRZ
+        WZJ4DhCZ85eouvUlyNSnAMRsHqu0kaLR2ZefjeKO2oCe3mG8HBhHgXyhLOBPA0mCrJM9ZA/i4q1ucBbb
+        NBK5IpIUFaUjEIvAXFTErkPtVEGB3QfbwZqY/woISWCWIBGC8AsrJYBp3IUvlMUqLIhUhQKZ9I8JBLgG
+        WZ1W6sBDRzSdAGZSBKFCo94UGs7dAzcw4oInVkCAAAJtMs1Qgkb/kQCXIavtxTLZrjhgj9B3EXBTJ3p7
+        mAD3wT0ftML2OQ4vVWZ0Zwxg99E16CKAEgfqXoE1xZP/PQF4AlhD62hp0+H81YfgXpgdEmDMl4abRnDR
+        jEFKaLo9RIAb2LavE5ORPBxEnSCIyZvDE8scduyt/32VfUZegphp0A/Unkko4OSFUTR3JdDwYB43tQEp
+        +a2QhcboxZ4jl6BQtpa/had9w2D62DiD1/YYRsJF2OjQ3HSCBiEHtdkHeasOO/c3ovHs3a2fteKKGsfk
+        bRLE4KdkUrlKj+1VpyCrOfP35M0/x9GWR1D12zGZB6qbNf+eWAlRPnPi+PU3/wdgMDZvvbJzy5l/Am7V
+        YvnqVXhIAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>Über</value>
+  </data>
+  <data name="dawnOfLightHomepageToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAAq9JREFUOE+lk9tLk3EYx+uPqKtCKC8KS4qCrM1jioWHSO2gtfI0zUNTyyi1maJz06Et
+        zelaontpU5LIUl9TqSy1LNFCNDtoqahJoUEU1tUn34HOdRX0wu/ihef7+R2ez7MWWPNfnwRYvaY+f6Oj
+        9x2mhmdoTJ3oax5SVd9La9cwEzPzS6XO9U7h568nMAhdCE+76RwbQJxuQxjPJ11M5KimlstlTTx5+d4J
+        sgKQwiXWdu6MtDL4fZjRX7NcaCrC8EFN8r1Q/LR6Tmj6iLki8LhvdAViB0jHLrM8wtRfTtucha6FfgZ+
+        jDC6+JXGmWYSq7UEVr9hb0UT+4xK0rV1fJz6YofYAe09bykQRKpf6TGOX8QyVYEwraVqSCDF1kiSaZ4T
+        pRO414ez1RqMT2EajWKfA1Bp68HUMolGNJD64hAZ/SGct2ShEto5Yxoi/uo0cqMVN2sIm2v3s60kDHVZ
+        gwOQfVXE3PGLPLOZ0PpAgsQoTlVeQ1U1Q8K1WU4Wj+Fmice1xpuNRh9cdAFEpZU5AJdKmylvWSTn1ldO
+        ZykJNsfhczcaL8GIovgTEXnDHFAdZluhjHWlbmxQyzmWrHMADJYuMowfUd38TVL5OGHZKjxuHWGH7RDb
+        K/MIzh7A++xZ/JRBrM/Zya7kWM4X3HAAWpYkSdE9If76T2IMC0QV9uKdG4GrWcYWvRx56lI4pQV5tBav
+        0wr8I2Oou93uAEiGSZLEFg0SWTxHYH4/LnoFm3S72ZMYhW98Gp6JIvtiW/E4qicyKZ/RsUkHQGqlZJhS
+        beN4bi/umVpcM0/iFROOPFaHZ0InsjjRHvaNSKPpQbezSMt+S4ad01g5mF5OgDIF/4QKvBLu46kwIgvP
+        su+8Orwi0uoBkQyTJJH6LLVKem3pwaQ7Lx97db3TMP09af/y/wc0qJe9N84EKQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="reportABugToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAjBJREFUOE+tkt9L
+        U2Ecxv0vuumqmyC8iiUGNeyiyN0GQdKMLEmKjLrIIUFBMLFhcGhKzKPhWuUQ57bAcKt1qBa57PfU1Ww6
+        tbWcbrbtbDueH0/vOetswbboogNfzsXL83mf53m/dXX/43M/C6HaOHxB2KfewfZwWpmad8niWp9EDugx
+        BnuaT6HbZK0OmXg6W1UvETUvSOi3TcHjD9aGjHk/VABEWcxLKHAiblkfoUF3ujQVUR5MziiAJkMMDZ0R
+        iCJgdfgxaGeQyQlIZXkFooIqAHfdr0oOBCLmeBE5cnOaFZBM81hL8YitcwpA7qICMOx4DokEVh2wBZE4
+        eIHBUQZmqxd99CReLkVhn2NgChjR5tsHXc99HOx1FWEWu08pS86bzYvYzArY+MkjntzC6loBzJc5UAtd
+        8GcDcK16cGHcDO0ND1ombhYBA/c8imXVQWJzS3FA/3Zwlh7CuelD6HlzCVddTpykYmi03Mbxx+eLADmb
+        XFYpb4JDNM4h/C2P+WgOl+kIdAOH0WzTo5X6iGPGCHZRR7DNvLsM2CBlqQ6WvheKDsgr9JMOLloyaL3+
+        BPupo6gf6cCBK05oz5zADoOmDIgnOayQvJFYAZ9X8phdZPE+zOJ1KAOzO4GWXhZ7rxmx3bQTms52NLWP
+        o2/EWQYs/+DwlYhDy3l8irB4G84iMJ+BP5iGdyaF7qEw6rsM0HTooW27g0b9aPkV5A4WSF51Wf72r7oH
+        6oLIh/8yfy7SLyYYYgxhyIOTAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="reportABugToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fehler melden</value>
+  </data>
+  <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="toolStripMenuItem4.Text" xml:space="preserve">
+    <value>Informationen</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 24</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        0b0pKdGsKSnT/ygo0+4nJ86IKSnS3ikp0/8oKNOqJyfTQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgAA
+        ADoAAEzjAAD//wAA//8AAEzjBwcsRScnypwpKdP/KCjSlgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AA4AABPcAABM4wAAgesAAP//AAD//wAAgesAAEzjAAAT3AAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAOgAATOMAAP//AAD//wAA//8AAP//AAD//wAA//8AAEzjAAAAOgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAdAAAn3gAAgesAAIHrAACB6wAAgesAAIHrAACB6wAAJ94AAAAdAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdAAAAZQAAAGUAAABlAAAAZQAAAGUAAABlAAAAHQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+AAAH/gAAB/4AAAP+AAAD/gAAA/4AAAf+A
+        AAP/gAAD/4AAA//AAAH/wAAB/8AAAf/AAAHAAAABgAAAAYAAAACAAAAAwAAAAOAAAADgAAAA4AAAAOAA
+        AADgAAAA4AAAAOAAAADgAAAHwA///4Af//+AH///gB///8A/////////KAAAABAAAAAgAAAAAQAgAAAA
+        AABABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABsAAABOAAAAVgAAAF8AAABlAAAAawAA
+        AHIAAAB5AAAAYAAAACMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABsZKD+pIUaCzR9NkdIiU5jZIluj3AxN
+        neEBSJvlBlKo6gRIktoDAwWYAAAABAAAAAAAAAAAAAAAAAAAAAAAAABXAEKy0yFx7v9BgeH/U4/h/2Wb
+        4P99quH/kbjj/6bF5P8qjOv/Dx8xqQAAAB0AAAAAAAAAAAAAAAAAAAAOAAAAnA4kR+FCV3n/hYF5/93U
+        yf//+Or///zr////7////+z/WJvc/yZioNYAAABbAAAAAAAAAAAAAAAAAAAAlgAAd/8AAHf/AAB3/wAA
+        d/8AACL/ysS8/+jk3//W0c7///br/5G75P8EYL/sAwUGmAAAAAIAAAAAAAAAAAAAAP8AAP//AAD//wAA
+        //8AAP//AAB3/3NsZf97fon/gJ3B/+vgyP+5y9X/HX/X/homMaUAAAAWAAAAAAAAAAAAAACWAAAA/wAA
+        7v8AAP//AAAA/1FNSv+ycjr/v3w7/7m2t/+2xJH/y9K4/0WW4f8lQVm3AAAALgAAAAAAAAAAAAAAAAAA
+        AO4AAO7/AAD//wAAAP/Xk1T/xXUk/72voP/S0Mz/zsrB//Hk2/98sdr/NF5+xwAAAEcAAAAAAAAAAAAA
+        AAAAAADuAADu/wAA//8AAAD/0YpE/8m7q//Ly8z/09HI/9rYw///+PD/vtTe/zR2ndsAAABiAAAAAAAA
+        AAAAAAAAAAAA8AAA7v8AAP//AAAA/9bQyv/Dw8P/2NPS/7/Gr//Ny63////+/8/i6v8ig7PxAwYImQAA
+        AAUAAAAAAAAAJgAAAPgAAO7/AAD//wAAAP/Ozcz/y8fD/9XSzv/Pzsn/7uPg//Lx5f/Q5Oj/MJvK/RUi
+        KKQAAAAVAAAACAwMDLUHBQP9AADu/wAA//8AAAD/srKw///58v/h3df/3trW/9zZ0v+uw4T/09/K/0Su
+        2v8nQk20AAAALAAAAB4NDhHjAACq/wAA//8AAP//AACq/wAAM//Gwr7/0dPY/8DFzf+wvbr/4+jV///8
+        +P99w9z/OmZ0xwAAAEUAAAAAAAAA8QAA7v8AAO7/AADu/wAA7v8AAFX/YXaH/wArVv8AMmX/ADB7/3yc
+        uf/h9/3/s+Lx/z94is4AAABRAAAAAAAAAIUAAADuAAAA7gAAAO4AAQH4Cx0k2i1bc75AVWnaPFhx2j9b
+        f9pAYHPWJVZntiNVZbMWHh+gAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAACYAAAA6AAAAYgAA
+        AGEAAABiAAAAWwAAAC4AAAAqAAAADgAAAADgB///wAP//8AD//+AA///gAH//4AB//+AAf//wAH//8AB
+        ///AAP//gAD//wAA//8AAP//gAD//4AA///4Af//
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Neues Item - ItemCreator für Dawn of Light</value>
+  </data>
+  <data name="item_model_id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 19</value>
+  </data>
+  <data name="buttonModelIds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 17</value>
+  </data>
+  <data name="buttonModelIds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 23</value>
+  </data>
+  <data name="item_extension.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 99</value>
+  </data>
+  <data name="item_extension.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 21</value>
+  </data>
+  <data name="item_color.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 72</value>
+  </data>
+  <data name="item_color.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 21</value>
+  </data>
+  <data name="item_visible_effect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 45</value>
+  </data>
+  <data name="item_visible_effect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 21</value>
+  </data>
+  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 105</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Erweiterung</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 78</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Farbe</value>
+  </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 48</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 13</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>sichtbarer Effekt</value>
+  </data>
+  <data name="label31.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 25</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 299</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 132</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Sichtbare Einstellungen</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>Schadensart</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>Waffenhand</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 215</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 78</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Waffenspezifisch</value>
+  </data>
+  <data name="item_stacksize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 75</value>
+  </data>
+  <data name="item_buystacksize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 75</value>
+  </data>
+  <data name="item_buystacksize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="item_quality.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="item_sell_copper.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 49</value>
+  </data>
+  <data name="item_sell_silver.Location" type="System.Drawing.Point, System.Drawing">
+    <value>195, 49</value>
+  </data>
+  <data name="item_sell_gold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 49</value>
+  </data>
+  <data name="item_sell_platinum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 49</value>
+  </data>
+  <data name="item_classes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 101</value>
+  </data>
+  <data name="item_classes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 108</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>Klassen</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 78</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>anzahl bei Kauf</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 78</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Stapelgröße</value>
+  </data>
+  <data name="label25.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 52</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 52</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 52</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 52</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Verkaufswert</value>
+  </data>
+  <data name="label20.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Qualität</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 216</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Generelle Informationen</value>
+  </data>
+  <data name="item_dps_af.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 75</value>
+  </data>
+  <data name="item_bonus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 126</value>
+  </data>
+  <data name="item_weight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 152</value>
+  </data>
+  <data name="item_speed_abs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 100</value>
+  </data>
+  <data name="checkKeyword.Text" xml:space="preserve">
+    <value>prüfe DB</value>
+  </data>
+  <data name="item_lootdrop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 180</value>
+  </data>
+  <data name="item_lootdrop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="item_lootdrop.Text" xml:space="preserve">
+    <value>kann als Beute fallen</value>
+  </data>
+  <data name="item_tradeable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 180</value>
+  </data>
+  <data name="item_tradeable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 17</value>
+  </data>
+  <data name="item_tradeable.Text" xml:space="preserve">
+    <value>ist handelbar</value>
+  </data>
+  <data name="item_dropable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 180</value>
+  </data>
+  <data name="item_dropable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 17</value>
+  </data>
+  <data name="item_dropable.Text" xml:space="preserve">
+    <value>kann fallengelassen werden</value>
+  </data>
+  <data name="item_pickable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 17</value>
+  </data>
+  <data name="item_pickable.Text" xml:space="preserve">
+    <value>ist aufhebbar</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 155</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>16 für 1.6 Pfund</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 129</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 103</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>35 für 3.5 Geschwindigkeit</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 78</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 13</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>165 für 16.5 Schaden (DPS)</value>
+  </data>
+  <data name="item_type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 49</value>
+  </data>
+  <data name="item_type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 21</value>
+  </data>
+  <data name="item_slot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 23</value>
+  </data>
+  <data name="item_slot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 21</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 155</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Gewicht</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 129</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 13</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Geschw. oder Absorption</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 13</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Schaden oder Rüstfaktor</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 52</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 26</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Rüstplatz</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Reich</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 130</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 16</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>von</value>
+  </data>
+  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Zustand</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Haltbarkeit</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 104</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 16</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>von</value>
+  </data>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Stufe</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 203</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Generelle Informationen</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 442</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Generelle und sichtbare einstellungen</value>
+  </data>
+  <data name="item_charges.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 360</value>
+  </data>
+  <data name="item_charges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="item_poison_charges.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 55</value>
+  </data>
+  <data name="item_poison_charges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 20</value>
+  </data>
+  <data name="item_PoisonSpellID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 29</value>
+  </data>
+  <data name="item_PoisonSpellID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 20</value>
+  </data>
+  <data name="searchPoisonSpellID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 79</value>
+  </data>
+  <data name="searchPoisonSpellID.Text" xml:space="preserve">
+    <value>suche Zauber</value>
+  </data>
+  <data name="label54.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 58</value>
+  </data>
+  <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="label54.Text" xml:space="preserve">
+    <value>Ladungen</value>
+  </data>
+  <data name="label55.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="label55.Text" xml:space="preserve">
+    <value>Zauber ID</value>
+  </data>
+  <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 331</value>
+  </data>
+  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 108</value>
+  </data>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>Giftladungen</value>
+  </data>
+  <data name="searchProcSpellID1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 79</value>
+  </data>
+  <data name="searchProcSpellID1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="searchProcSpellID1.Text" xml:space="preserve">
+    <value>suche Zauber 2</value>
+  </data>
+  <data name="searchProcSpellID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="searchProcSpellID.Text" xml:space="preserve">
+    <value>suche Zauber 1</value>
+  </data>
+  <data name="label50.Text" xml:space="preserve">
+    <value>Zauber ID</value>
+  </data>
+  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 331</value>
+  </data>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 108</value>
+  </data>
+  <data name="item_charges1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 55</value>
+  </data>
+  <data name="item_charges1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="item_SpellID1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="searchSpellID1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 79</value>
+  </data>
+  <data name="searchSpellID1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 23</value>
+  </data>
+  <data name="searchSpellID1.Text" xml:space="preserve">
+    <value>suche Zauber 2</value>
+  </data>
+  <data name="searchSpellID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 23</value>
+  </data>
+  <data name="searchSpellID.Text" xml:space="preserve">
+    <value>suche Zauber 1</value>
+  </data>
+  <data name="label48.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 10</value>
+  </data>
+  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>Ladungen</value>
+  </data>
+  <data name="item_SpellID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="label47.Text" xml:space="preserve">
+    <value>Zauber ID</value>
+  </data>
+  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 108</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>Ladungen</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 319</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 442</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Magische Werte und Zauber</value>
+  </data>
+  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 20</value>
+  </data>
+  <data name="label49.Text" xml:space="preserve">
+    <value>Dieser Bereich benötigt MySQL-unterstützung und ein bereits gespeichertes Item in der Datenbank!</value>
+  </data>
+  <data name="updateMobXTemplateList.Text" xml:space="preserve">
+    <value>aktualisiere Liste</value>
+  </data>
+  <data name="newMobTemplate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAh1JREFUOE+Vk1tP
+        E1EUhaeY8L+M/6WPPpgYYzTG6INEEo0aQBo00ShBjRhTi1UsUFqx1SLQG/RGL1AK0wu92jJnziz3Hm0k
+        meHBSU5mkplvrW+fyXEof687r7IYPp++O0ZGFH0wUM6Njip5313F5XI57L5TOIAvYQADAfQ0A62BgcYv
+        A7WOBL+/4lbhdDpti8wAIYE+wd0TgvsG6j0DVYIrLYkLs31znX9YsA/hgL4GdKi1ya1dA0dtAwcEl44l
+        IgmY67W7hxtjbmsIB7RZmVprXYnDtkS5SXBDYrcmkVYldg51xA90fA537QPqPQm1Y6BC8D61FutDWMc2
+        wTGCN/d1+NY79gEqzcvKewTnCc5WdaSOJJIViVhZxwbBP4pkEDkjoNw0UCTlPClnqqRMcIJatwj+uSfw
+        neBveYGP4bbV4PbzBAoE5xhW/ylvUet6iWGBNYIDOQFPyCbg5swGcqTMm5Ws/JmXlSMlHeECwbsCq1mB
+        5YyG919bVoPrEyFzl1k5airzvAIhgoME+7MallICizsa3gWa1oCr91cRp2ZWZng4b5BaVzICX9IaPm0L
+        LCQE3vhtAi6PLVqUA6ycJpiavUkNngTpxzTMLR9bDS7d8pi/aKjM8y5RKyt7qflDnODoCeY3Nbz0NawB
+        F6/N48nbFFxzSTyejWHqRRTTzyKYehrG5MwaJqaDeDTpx/iDBYzf89qfBz5p/7P4WP8G/jqMg6Vn2nUA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="newMobTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 22</value>
+  </data>
+  <data name="newMobTemplate.Text" xml:space="preserve">
+    <value>neue Monsterzuweisung</value>
+  </data>
+  <data name="editMobTemplate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAARFJREFUOE9jZACC
+        1atX/1+3bh2ICQYODg4M6enpjHABYhiRkZH/T58+Dcbh4eH/QXxi9DHAFM6cOROs6cqVK/8fPHgAZoPE
+        CBoCUohuyL179/6fOHGCOFeANIM0wAzavn37/2vXrv3fs2cP8QaAAvHs2bP/jx8//v/w4cP/z58//3/5
+        8uXEGwCyfc6cOf937tz5/8iRI/9XrFjxf11q2P93k4v/33SXIj4cQC4BBdze5qr/fwwZ/p+TYvj/bvFk
+        0gwBueaSMvP//ysn//9vTKIhsChz09QcxIa8Wj6buDDB6h0zFnDAPtmynTxDnnX2gA043dBMmgEg14AC
+        ti20/v+hOfvBmKj0gZ6RYIaADILJAQAszwmfRpaPmAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="editMobTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 22</value>
+  </data>
+  <data name="editMobTemplate.Text" xml:space="preserve">
+    <value>Eintrag bearbeiten</value>
+  </data>
+  <data name="deleteMobTemplate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAALxJREFUOE9jYBhe
+        4P/ctv//WzP+k+2r/4v7/v+viPj/vzISqyH/ZzYSZzjIAJBBMJf87y74/78cu6E4Xfu/Mur//+qY//+b
+        0v7/zw8gzmZ00/5nuP//H2dDpuZkp///gwz+/3dW/P/HR4c0QyAaFeCaPqgw//8YbkecIf+91f//NxX6
+        /1+bA67h74S6/0dEGf5/rc0mbMh/Tbb/H9Q5/l8JcERR/DTY7v8KQUbCBoAC8oYyF3EKyU5xg0ojABFW
+        XN6yhUH4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="deleteMobTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 22</value>
+  </data>
+  <data name="deleteMobTemplate.Text" xml:space="preserve">
+    <value>Eintrag löschen</value>
+  </data>
+  <data name="mobxTemplateContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 70</value>
+  </data>
+  <data name="mobXTemplateDataGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>618, 136</value>
+  </data>
+  <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 13</value>
+  </data>
+  <data name="label56.Text" xml:space="preserve">
+    <value>Dieses LootTemplate ist mit folgenden Monstern verbunden:</value>
+  </data>
+  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>630, 203</value>
+  </data>
+  <data name="updateLootTemplateList.Text" xml:space="preserve">
+    <value>aktualisiere Liste</value>
+  </data>
+  <data name="newLootTemplateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAh1JREFUOE+Vk1tP
+        E1EUhaeY8L+M/6WPPpgYYzTG6INEEo0aQBo00ShBjRhTi1UsUFqx1SLQG/RGL1AK0wu92jJnziz3Hm0k
+        meHBSU5mkplvrW+fyXEof687r7IYPp++O0ZGFH0wUM6Njip5313F5XI57L5TOIAvYQADAfQ0A62BgcYv
+        A7WOBL+/4lbhdDpti8wAIYE+wd0TgvsG6j0DVYIrLYkLs31znX9YsA/hgL4GdKi1ya1dA0dtAwcEl44l
+        IgmY67W7hxtjbmsIB7RZmVprXYnDtkS5SXBDYrcmkVYldg51xA90fA537QPqPQm1Y6BC8D61FutDWMc2
+        wTGCN/d1+NY79gEqzcvKewTnCc5WdaSOJJIViVhZxwbBP4pkEDkjoNw0UCTlPClnqqRMcIJatwj+uSfw
+        neBveYGP4bbV4PbzBAoE5xhW/ylvUet6iWGBNYIDOQFPyCbg5swGcqTMm5Ws/JmXlSMlHeECwbsCq1mB
+        5YyG919bVoPrEyFzl1k5airzvAIhgoME+7MallICizsa3gWa1oCr91cRp2ZWZng4b5BaVzICX9IaPm0L
+        LCQE3vhtAi6PLVqUA6ycJpiavUkNngTpxzTMLR9bDS7d8pi/aKjM8y5RKyt7qflDnODoCeY3Nbz0NawB
+        F6/N48nbFFxzSTyejWHqRRTTzyKYehrG5MwaJqaDeDTpx/iDBYzf89qfBz5p/7P4WP8G/jqMg6Vn2nUA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="newLootTemplateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="newLootTemplateButton.Text" xml:space="preserve">
+    <value>neues LootTemplate</value>
+  </data>
+  <data name="editLottTemplateEntry.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAARFJREFUOE9jZACC
+        1atX/1+3bh2ICQYODg4M6enpjHABYhiRkZH/T58+Dcbh4eH/QXxi9DHAFM6cOROs6cqVK/8fPHgAZoPE
+        CBoCUohuyL179/6fOHGCOFeANIM0wAzavn37/2vXrv3fs2cP8QaAAvHs2bP/jx8//v/w4cP/z58//3/5
+        8uXEGwCyfc6cOf937tz5/8iRI/9XrFjxf11q2P93k4v/33SXIj4cQC4BBdze5qr/fwwZ/p+TYvj/bvFk
+        0gwBueaSMvP//ysn//9vTKIhsChz09QcxIa8Wj6buDDB6h0zFnDAPtmynTxDnnX2gA043dBMmgEg14AC
+        ti20/v+hOfvBmKj0gZ6RYIaADILJAQAszwmfRpaPmAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="editLottTemplateEntry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="editLottTemplateEntry.Text" xml:space="preserve">
+    <value>Eintrag bearbeiten</value>
+  </data>
+  <data name="deleteTemplateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAALxJREFUOE9jYBhe
+        4P/ctv//WzP+k+2r/4v7/v+viPj/vzISqyH/ZzYSZzjIAJBBMJf87y74/78cu6E4Xfu/Mur//+qY//+b
+        0v7/zw8gzmZ00/5nuP//H2dDpuZkp///gwz+/3dW/P/HR4c0QyAaFeCaPqgw//8YbkecIf+91f//NxX6
+        /1+bA67h74S6/0dEGf5/rc0mbMh/Tbb/H9Q5/l8JcERR/DTY7v8KQUbCBoAC8oYyF3EKyU5xg0ojABFW
+        XN6yhUH4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="deleteTemplateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="deleteTemplateButton.Text" xml:space="preserve">
+    <value>Eintrag löschen</value>
+  </data>
+  <data name="lootTemplateContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 70</value>
+  </data>
+  <data name="lootTemplateDataGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>618, 137</value>
+  </data>
+  <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 13</value>
+  </data>
+  <data name="label53.Text" xml:space="preserve">
+    <value>Dieses Item existiert in folgenden LootTemplates:</value>
+  </data>
+  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 201</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 442</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Loot &amp; Dropchancen</value>
+  </data>
+  <data name="tabLootDrop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>653, 468</value>
+  </data>
+  <data name="saveFileDialog.Filter" xml:space="preserve">
+    <value>ItemCreator Datei (*.ici)|*.ici|XML Datei (*.xml)|*.xml|Alle Dateien (*.*)|*.*</value>
+  </data>
+  <data name="saveFileDialog.Title" xml:space="preserve">
+    <value>Item speichern</value>
+  </data>
+  <data name="openFileDialog.Filter" xml:space="preserve">
+    <value>ItemCreator Datei (*.ici)|*.ici|XML Datei (*.xml)|*.xml|Alle Dateien (*.*)|*.*</value>
+  </data>
+  <data name="openFileDialog.Title" xml:space="preserve">
+    <value>Item-Datei öffnen</value>
+  </data>
+</root>

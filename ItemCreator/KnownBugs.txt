@@ -1,0 +1,12 @@
+!!! NOTE !!!
+Please check your Database for custom columns without a default value!
+My Tool can not look in it's glass sphere to get the right value!
+
+
+version 2.1.0.0
+- fixed previous 1. and 2.
+
+version 2.0.2.0
+1. not null field can cause problems when commit to mysql db
+2. single quote ( sql injection) are not handled (they exists in some DB)
+3. you need to supply some values for blank fields (poison, spells)

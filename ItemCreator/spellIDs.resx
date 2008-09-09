@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;selectSpellButton.Name" xml:space="preserve">
+    <value>selectSpellButton</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="selectSpellButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;spellList.Type" xml:space="preserve">
+    <value>ItemCreator.database.Spells, database.Spells.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;order_by.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="current_page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 92</value>
+  </data>
+  <data name="selectSpellButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="typesComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 43</value>
+  </data>
+  <data name="&gt;&gt;pages_total.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="order_by.Items" xml:space="preserve">
+    <value>SpellID</value>
+  </data>
+  <data name="&gt;&gt;current_page.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;typeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>typeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;selectSpellButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="order_by.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="spellDataGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>568, 414</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;spellDataGrid.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="typesComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 21</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="searchButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;typesComboBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;order_by.Name" xml:space="preserve">
+    <value>order_by</value>
+  </data>
+  <data name="selectSpellButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>489, 538</value>
+  </data>
+  <data name="&gt;&gt;selectSpellButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="&gt;&gt;searchButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;targetDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;typesComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;spellDataGrid.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;spellName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 46</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 20</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pages_total.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>spellIDs</value>
+  </data>
+  <data name="valueDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="order_by.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 21</value>
+  </data>
+  <data name="&gt;&gt;targetComboBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="typeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="&gt;&gt;targetComboBox.Name" xml:space="preserve">
+    <value>targetComboBox</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;data_per_page.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;descriptionDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>descriptionDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>search Spell ID</value>
+  </data>
+  <data name="data_per_page.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="current_page.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="pages_total.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="searchButton.Text" xml:space="preserve">
+    <value>search</value>
+  </data>
+  <data name="&gt;&gt;valueDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>valueDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;typeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;typesComboBox.Name" xml:space="preserve">
+    <value>typesComboBox</value>
+  </data>
+  <data name="spellName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 20</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;targetComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;spellList.Name" xml:space="preserve">
+    <value>spellList</value>
+  </data>
+  <data name="descriptionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Spells per page</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>568, 74</value>
+  </data>
+  <data name="data_per_page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>489, 91</value>
+  </data>
+  <data name="typesComboBox.MaxDropDownItems" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="data_per_page.Items" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="targetComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="selectSpellButton.Text" xml:space="preserve">
+    <value>select Spell</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 46</value>
+  </data>
+  <data name="data_per_page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 21</value>
+  </data>
+  <data name="&gt;&gt;spellIDDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>spellIDDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="searchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;spellName.Name" xml:space="preserve">
+    <value>spellName</value>
+  </data>
+  <data name="&gt;&gt;valueDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pages_total.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="order_by.Items5" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        0b0pKdGsKSnT/ygo0+4nJ86IKSnS3ikp0/8oKNOqJyfTQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgAA
+        ADoAAEzjAAD//wAA//8AAEzjBwcsRScnypwpKdP/KCjSlgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AA4AABPcAABM4wAAgesAAP//AAD//wAAgesAAEzjAAAT3AAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAOgAATOMAAP//AAD//wAA//8AAP//AAD//wAA//8AAEzjAAAAOgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAdAAAn3gAAgesAAIHrAACB6wAAgesAAIHrAACB6wAAJ94AAAAdAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdAAAAZQAAAGUAAABlAAAAZQAAAGUAAABlAAAAHQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+AAAH/gAAB/4AAAP+AAAD/gAAA/4AAAf+A
+        AAP/gAAD/4AAA//AAAH/wAAB/8AAAf/AAAHAAAABgAAAAYAAAACAAAAAwAAAAOAAAADgAAAA4AAAAOAA
+        AADgAAAA4AAAAOAAAADgAAAHwA///4Af//+AH///gB///8A/////////KAAAABAAAAAgAAAAAQAgAAAA
+        AABABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABsAAABOAAAAVgAAAF8AAABlAAAAawAA
+        AHIAAAB5AAAAYAAAACMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABsZKD+pIUaCzR9NkdIiU5jZIluj3AxN
+        neEBSJvlBlKo6gRIktoDAwWYAAAABAAAAAAAAAAAAAAAAAAAAAAAAABXAEKy0yFx7v9BgeH/U4/h/2Wb
+        4P99quH/kbjj/6bF5P8qjOv/Dx8xqQAAAB0AAAAAAAAAAAAAAAAAAAAOAAAAnA4kR+FCV3n/hYF5/93U
+        yf//+Or///zr////7////+z/WJvc/yZioNYAAABbAAAAAAAAAAAAAAAAAAAAlgAAd/8AAHf/AAB3/wAA
+        d/8AACL/ysS8/+jk3//W0c7///br/5G75P8EYL/sAwUGmAAAAAIAAAAAAAAAAAAAAP8AAP//AAD//wAA
+        //8AAP//AAB3/3NsZf97fon/gJ3B/+vgyP+5y9X/HX/X/homMaUAAAAWAAAAAAAAAAAAAACWAAAA/wAA
+        7v8AAP//AAAA/1FNSv+ycjr/v3w7/7m2t/+2xJH/y9K4/0WW4f8lQVm3AAAALgAAAAAAAAAAAAAAAAAA
+        AO4AAO7/AAD//wAAAP/Xk1T/xXUk/72voP/S0Mz/zsrB//Hk2/98sdr/NF5+xwAAAEcAAAAAAAAAAAAA
+        AAAAAADuAADu/wAA//8AAAD/0YpE/8m7q//Ly8z/09HI/9rYw///+PD/vtTe/zR2ndsAAABiAAAAAAAA
+        AAAAAAAAAAAA8AAA7v8AAP//AAAA/9bQyv/Dw8P/2NPS/7/Gr//Ny63////+/8/i6v8ig7PxAwYImQAA
+        AAUAAAAAAAAAJgAAAPgAAO7/AAD//wAAAP/Ozcz/y8fD/9XSzv/Pzsn/7uPg//Lx5f/Q5Oj/MJvK/RUi
+        KKQAAAAVAAAACAwMDLUHBQP9AADu/wAA//8AAAD/srKw///58v/h3df/3trW/9zZ0v+uw4T/09/K/0Su
+        2v8nQk20AAAALAAAAB4NDhHjAACq/wAA//8AAP//AACq/wAAM//Gwr7/0dPY/8DFzf+wvbr/4+jV///8
+        +P99w9z/OmZ0xwAAAEUAAAAAAAAA8QAA7v8AAO7/AADu/wAA7v8AAFX/YXaH/wArVv8AMmX/ADB7/3yc
+        uf/h9/3/s+Lx/z94is4AAABRAAAAAAAAAIUAAADuAAAA7gAAAO4AAQH4Cx0k2i1bc75AVWnaPFhx2j9b
+        f9pAYHPWJVZntiNVZbMWHh+gAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAACYAAAA6AAAAYgAA
+        AGEAAABiAAAAWwAAAC4AAAAqAAAADgAAAADgB///wAP//8AD//+AA///gAH//4AB//+AAf//wAH//8AB
+        ///AAP//gAD//wAA//8AAP//gAD//4AA///4Af//
+</value>
+  </data>
+  <data name="&gt;&gt;selectSpellButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spellName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 13</value>
+  </data>
+  <data name="spellDataGrid.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;targetComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;descriptionDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="order_by.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 91</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>403, 94</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 94</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;order_by.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="targetComboBox.MaxDropDownItems" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pages_total.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="selectSpellButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="typesComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="targetDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="data_per_page.Items1" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="order_by.Items3" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 94</value>
+  </data>
+  <data name="&gt;&gt;spellName.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;typesComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;data_per_page.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pages_total.Name" xml:space="preserve">
+    <value>pages_total</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="order_by.Items1" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="current_page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="pages_total.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="&gt;&gt;data_per_page.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;data_per_page.Name" xml:space="preserve">
+    <value>data_per_page</value>
+  </data>
+  <data name="searchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>487, 41</value>
+  </data>
+  <data name="&gt;&gt;current_page.Name" xml:space="preserve">
+    <value>current_page</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Order by</value>
+  </data>
+  <data name="order_by.Items4" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>600, 600</value>
+  </data>
+  <data name="&gt;&gt;searchButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;spellName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="spellDataGrid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 118</value>
+  </data>
+  <data name="spellDataGrid.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="&gt;&gt;current_page.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spellName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="&gt;&gt;spellDataGrid.Name" xml:space="preserve">
+    <value>spellDataGrid</value>
+  </data>
+  <data name="data_per_page.Items2" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 94</value>
+  </data>
+  <data name="&gt;&gt;spellIDDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="selectSpellButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 23</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>592, 566</value>
+  </data>
+  <data name="&gt;&gt;spellDataGrid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="spellIDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="spellDataGrid.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Search options</value>
+  </data>
+  <data name="&gt;&gt;current_page.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="targetComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 21</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="pages_total.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="&gt;&gt;targetDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>targetDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;searchButton.Name" xml:space="preserve">
+    <value>searchButton</value>
+  </data>
+  <data name="pages_total.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 94</value>
+  </data>
+  <data name="targetComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 43</value>
+  </data>
+  <data name="&gt;&gt;order_by.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="order_by.Items2" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <metadata name="spellList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>German</value>
+  </metadata>
+</root>
