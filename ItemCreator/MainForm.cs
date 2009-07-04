@@ -225,7 +225,7 @@ namespace ItemCreator
                 foreach (DataRowView row in this.item_classes.SelectedItems)
                 {
                     if (allowedClasses == "") allowedClasses = row.Row["id"].ToString();
-                    else allowedClasses += "," + row.Row["id"].ToString();
+                    else allowedClasses += ";" + row.Row["id"].ToString();
                 }
                 this.item.ItemTemplate.Rows[0]["AllowedClasses"] = allowedClasses;
 
@@ -252,7 +252,7 @@ namespace ItemCreator
 
             string classes = (string)item.ItemTemplate.Rows[0]["AllowedClasses"];
             //MessageBox.Show("classes: " + classes);
-            string[] classes_split = classes.Split(Convert.ToChar(","));
+            string[] classes_split = classes.Split(Convert.ToChar(";"));
 
             ListBox.SelectedObjectCollection selectedClasses = new ListBox.SelectedObjectCollection(item_classes);
             for (int i = 0; i < this.item_classes.Items.Count; i++)

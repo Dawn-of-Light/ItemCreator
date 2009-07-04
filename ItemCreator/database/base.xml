@@ -1095,6 +1095,24 @@
   <bonus category="resists caps" id="229">
     <name>Bonus to Thrust resists cap</name>
   </bonus>
+    	<bonus category="other" id="247">
+		<name>Bounty Points</name>
+	</bonus>
+	  	<bonus category="other" id="248">
+		<name>Xp Points</name>
+	</bonus>
+	  	<bonus category="other" id="251">
+		<name>Conversion</name>
+	</bonus>
+	 <bonus category="other" id="252">
+		<name>Style Absorb</name>
+	</bonus>
+	<bonus category="other" id="253">
+		<name>Realm Points</name>
+	</bonus>
+  	<bonus category="other" id="254">
+		<name>Arcane Syphon</name>
+	</bonus>
   
   <!-- Section Visible Effects -->
 	<effect id="0">

@@ -86,7 +86,8 @@
               <xs:element name="PoisonCharges" msprop:Generator_UserColumnName="PoisonCharges" msprop:Generator_ColumnVarNameInTable="columnPoisonCharges" msprop:Generator_ColumnPropNameInRow="PoisonCharges" msprop:Generator_ColumnPropNameInTable="PoisonChargesColumn" type="xs:int" default="0" minOccurs="0" />
               <xs:element name="Realm" msprop:Generator_UserColumnName="Realm" msprop:Generator_ColumnVarNameInTable="columnRealm" msprop:Generator_ColumnPropNameInRow="Realm" msprop:Generator_ColumnPropNameInTable="RealmColumn" type="xs:int" default="0" minOccurs="0" />
               <xs:element name="AllowedClasses" msprop:Generator_UserColumnName="AllowedClasses" msprop:Generator_ColumnVarNameInTable="columnAllowedClasses" msprop:Generator_ColumnPropNameInRow="AllowedClasses" msprop:Generator_ColumnPropNameInTable="AllowedClassesColumn" type="xs:string" default="" />
-            </xs:sequence>
+              <xs:element name="PackageID" msprop:Generator_UserColumnName="PackageID" msprop:Generator_ColumnVarNameInTable="columnPackageID" msprop:Generator_ColumnPropNameInRow="PackageID" msprop:Generator_ColumnPropNameInTable="PackageIDColumn" type="xs:string" default="" />
+          	</xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:choice>
