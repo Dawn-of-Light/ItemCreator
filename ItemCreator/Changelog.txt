@@ -1,3 +1,10 @@
+28th of November 2009 version 2.1.1.0
+- Upgraded to .NET Framework 3.5
+- Added preview of Models in  the model chooser using the Dawn of Light items showroom (http://dev.dolserver.net/models/items.php)
+- Updated the Models database to be usable with LINQ
+- Added column preview to Models database
+- Set timeout (3 sec.) on startup to mysql connection test
+
 19th of August 2008 version 2.1.0.1
 - fixed error while searching a model-id
 

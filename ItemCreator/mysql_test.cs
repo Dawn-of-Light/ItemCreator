@@ -75,6 +75,7 @@ namespace ItemCreator
             connectionString.Database = mysqlRow.Database;
             connectionString.UserID = mysqlRow.UserID;
             connectionString.Password = mysqlRow.Password;
+            connectionString.ConnectionTimeout = 3;
 
             MySqlConnection connection = new MySqlConnection(connectionString.ConnectionString);
 

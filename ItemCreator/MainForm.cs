@@ -622,6 +622,8 @@ namespace ItemCreator
 
         private void selectModelId(object sender, EventArgs e)
         {
+            //Replaced by newModelChooser
+            /*
             modelIds modelIdsForm = new modelIds();
 
             if (modelIdsForm.ShowDialog(this) == DialogResult.OK)
@@ -630,6 +632,25 @@ namespace ItemCreator
                 this.item_model_id.Text = modelIdsForm.selectedModelId.ToString();
             }
             modelIdsForm.Dispose();
+            */
+
+            int initial_id = 0;
+            if (this.item_model_id.Text.Length > 0)
+            {
+                try
+                {
+                    initial_id = Convert.ToInt32(this.item_model_id.Text);
+                }
+                catch { }
+            }
+
+            newModelChooser modelChooser = new newModelChooser(initial_id);
+            DialogResult result = modelChooser.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                this.item.ItemTemplate.Rows[0]["model"] = modelChooser.selectedModelId;
+                this.item_model_id.Text = modelChooser.selectedModelId.ToString();
+            }
         }
 
         #endregion

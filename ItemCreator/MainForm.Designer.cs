@@ -2100,7 +2100,7 @@
         public ItemCreator.database.LootTemplates lootTemplatesList;
         public ItemCreator.database.MobXLootTemplates mobXLootTemplateList;
         public ItemCreator.database.BaseXMLData baseXMLData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn realmDataGridViewTextBoxColumn;
+
         private System.Windows.Forms.DataGridViewTextBoxColumn lootTemplateIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn templateNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemTemplateIDDataGridViewTextBoxColumn;
