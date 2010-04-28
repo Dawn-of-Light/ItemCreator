@@ -250,24 +250,27 @@ namespace ItemCreator
             //serialized String
             this.item_classes.SelectedIndices.Clear();
 
-            string classes = (string)item.ItemTemplate.Rows[0]["AllowedClasses"];
-            //MessageBox.Show("classes: " + classes);
-            string[] classes_split = classes.Split(Convert.ToChar(";"));
+			if (item.ItemTemplate.Rows[0]["AllowedClasses"] != DBNull.Value)
+			{
+				string classes = (string)item.ItemTemplate.Rows[0]["AllowedClasses"];
+				//MessageBox.Show("classes: " + classes);
+				string[] classes_split = classes.Split(Convert.ToChar(";"));
 
-            ListBox.SelectedObjectCollection selectedClasses = new ListBox.SelectedObjectCollection(item_classes);
-            for (int i = 0; i < this.item_classes.Items.Count; i++)
-            {
-                DataRowView row = (DataRowView)this.item_classes.Items[i];
-                for (int n = 0; n < classes_split.Length; n++)
-                {
-                    //MessageBox.Show("vergleiche " + classes_split[n] + " mit " + row.Row["id"]);
-                    if (classes_split[n] == row.Row["id"].ToString())
-                    {
-                        item_classes.SetSelected(i, true);
-                        //MessageBox.Show("selektiere " + classes_split[n]);
-                    }
-                }
-            }
+				ListBox.SelectedObjectCollection selectedClasses = new ListBox.SelectedObjectCollection(item_classes);
+				for (int i = 0; i < this.item_classes.Items.Count; i++)
+				{
+					DataRowView row = (DataRowView)this.item_classes.Items[i];
+					for (int n = 0; n < classes_split.Length; n++)
+					{
+						//MessageBox.Show("vergleiche " + classes_split[n] + " mit " + row.Row["id"]);
+						if (classes_split[n] == row.Row["id"].ToString())
+						{
+							item_classes.SetSelected(i, true);
+							//MessageBox.Show("selektiere " + classes_split[n]);
+						}
+					}
+				}
+			}
 
             //Stats categorien laden und Wert selektieren
             for (int i = 1; i <= 11; i++)
@@ -1165,5 +1168,6 @@ namespace ItemCreator
         }
 
         #endregion
+
     }
 }

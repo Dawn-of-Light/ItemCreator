@@ -207,21 +207,9 @@ namespace ItemCreator
 		/// </summary>
 		private bool IsTradable = false;
 		/// <summary>
-		/// Variable for storing instance of database columnn Platinum of table ITEMTEMPLATE.
+		/// Variable for storing instance of database columnn Price of table ITEMTEMPLATE.
 		/// </summary>
-		private string Platinum = null;
-		/// <summary>
-		/// Variable for storing instance of database columnn Gold of table ITEMTEMPLATE.
-		/// </summary>
-		private string Gold = null;
-		/// <summary>
-		/// Variable for storing instance of database columnn Silver of table ITEMTEMPLATE.
-		/// </summary>
-		private string Silver = null;
-		/// <summary>
-		/// Variable for storing instance of database columnn Copper of table ITEMTEMPLATE.
-		/// </summary>
-		private string Copper = null;
+		private string Price = null;
 		/// <summary>
 		/// Variable for storing instance of database columnn MaxCount of table ITEMTEMPLATE.
 		/// </summary>
@@ -859,52 +847,17 @@ namespace ItemCreator
 			set {IsTradable = value;}
 		}
 
-		/// <summary>
-		/// Gets or sets the value of itemPlatinum.
-		/// </summary>
-		/// <value>
-		/// The value of database columnn Platinum of table ITEMTEMPLATE in the current instance.
-		/// </value>
-		public int itemPlatinum
-		{
-			get {return Convert.ToInt32(Platinum);}
-			set {Platinum = value.ToString();}
-		}
 
 		/// <summary>
-		/// Gets or sets the value of itemGold.
+		/// Gets or sets the value of itemPrice
 		/// </summary>
 		/// <value>
-		/// The value of database columnn Gold of table ITEMTEMPLATE in the current instance.
+		/// The value of database columnn Price of table ITEMTEMPLATE in the current instance.
 		/// </value>
-		public int itemGold
+		public int itemPrice
 		{
-			get {return Convert.ToInt32(Gold);}
-			set {Gold = value.ToString();}
-		}
-
-		/// <summary>
-		/// Gets or sets the value of itemSilver.
-		/// </summary>
-		/// <value>
-		/// The value of database columnn Silver of table ITEMTEMPLATE in the current instance.
-		/// </value>
-		public int itemSilver
-		{
-			get {return Convert.ToInt32(Silver);}
-			set {Silver = value.ToString();}
-		}
-
-		/// <summary>
-		/// Gets or sets the value of itemCopper.
-		/// </summary>
-		/// <value>
-		/// The value of database columnn Copper of table ITEMTEMPLATE in the current instance.
-		/// </value>
-		public int itemCopper
-		{
-			get {return Convert.ToInt32(Copper);}
-			set {Copper = value.ToString();}
+			get {return Convert.ToInt32(Price);}
+			set {Price = value.ToString();}
 		}
 
 		/// <summary>
@@ -1110,7 +1063,7 @@ namespace ItemCreator
         public Item(string ItemID, MySqlConnection con)
 		{
             _Connection = con;
-            MySqlCommand cmd = new MySqlCommand("SELECT ItemTemplate_ID,Id_nb,Name,Level,Durability,MaxDurability,`Condition`,MaxCondition,Quality,DPS_AF,SPD_ABS,Hand,Type_Damage,Object_Type,Item_Type,Color,Emblem,Effect,Weight,Model,Extension,Bonus,Bonus1,Bonus2,Bonus3,Bonus4,Bonus5,Bonus6,Bonus7,Bonus8,Bonus9,Bonus10,ExtraBonus,Bonus1Type,Bonus2Type,Bonus3Type,Bonus4Type,Bonus5Type,Bonus6Type,Bonus7Type,Bonus8Type,Bonus9Type,Bonus10Type,ExtraBonusType,IsPickable,IsDropable,CanDropAsLoot,IsTradable,Platinum,Gold,Silver,Copper,MaxCount,PackSize,Charges,MaxCharges,Charges1,MaxCharges1,SpellID,SpellID1,ProcSpellID,ProcSpellID1,PoisonSpellID,PoisonMaxCharges,PoisonCharges,Realm,AllowedClasses FROM itemtemplate WHERE Id_nb = ?Id_nb", con);
+            MySqlCommand cmd = new MySqlCommand("SELECT ItemTemplate_ID,Id_nb,Name,Level,Durability,MaxDurability,`Condition`,MaxCondition,Quality,DPS_AF,SPD_ABS,Hand,Type_Damage,Object_Type,Item_Type,Color,Emblem,Effect,Weight,Model,Extension,Bonus,Bonus1,Bonus2,Bonus3,Bonus4,Bonus5,Bonus6,Bonus7,Bonus8,Bonus9,Bonus10,ExtraBonus,Bonus1Type,Bonus2Type,Bonus3Type,Bonus4Type,Bonus5Type,Bonus6Type,Bonus7Type,Bonus8Type,Bonus9Type,Bonus10Type,ExtraBonusType,IsPickable,IsDropable,CanDropAsLoot,IsTradable,Price,MaxCount,PackSize,Charges,MaxCharges,Charges1,MaxCharges1,SpellID,SpellID1,ProcSpellID,ProcSpellID1,PoisonSpellID,PoisonMaxCharges,PoisonCharges,Realm,AllowedClasses FROM itemtemplate WHERE Id_nb = ?Id_nb", con);
 
             cmd.Parameters.AddWithValue("?Id_nb", ItemID);
 
@@ -1169,10 +1122,7 @@ namespace ItemCreator
 				IsDropable = Convert.ToBoolean(dr["IsDropable"]);
 				CanDropAsLoot = Convert.ToBoolean(dr["CanDropAsLoot"]);
 				IsTradable = Convert.ToBoolean(dr["IsTradable"]);
-				Platinum = dr["Platinum"].ToString();
-				Gold = dr["Gold"].ToString();
-				Silver = dr["Silver"].ToString();
-				Copper = dr["Copper"].ToString();
+				Price = dr["Price"].ToString();
 				MaxCount = dr["MaxCount"].ToString();
 				PackSize = dr["PackSize"].ToString();
 				Charges = dr["Charges"].ToString();
@@ -1202,7 +1152,7 @@ namespace ItemCreator
 			MySqlConnection con = _Connection;
 			MySqlCommand cmd = con.CreateCommand();
 
-            string SQL = "INSERT INTO itemtemplate (ItemTemplate_ID,Id_nb,Name,Level,Durability,MaxDurability,`Condition`,MaxCondition,Quality,DPS_AF,SPD_ABS,Hand,Type_Damage,Object_Type,Item_Type,Color,Emblem,Effect,Weight,Model,Extension,Bonus,Bonus1,Bonus2,Bonus3,Bonus4,Bonus5,Bonus6,Bonus7,Bonus8,Bonus9,Bonus10,ExtraBonus,Bonus1Type,Bonus2Type,Bonus3Type,Bonus4Type,Bonus5Type,Bonus6Type,Bonus7Type,Bonus8Type,Bonus9Type,Bonus10Type,ExtraBonusType,IsPickable,IsDropable,CanDropAsLoot,IsTradable,Platinum,Gold,Silver,Copper,MaxCount,PackSize,Charges,MaxCharges,Charges1,MaxCharges1,SpellID,SpellID1,ProcSpellID,ProcSpellID1,PoisonSpellID,PoisonMaxCharges,PoisonCharges,Realm,AllowedClasses) VALUES (?ItemTemplate_ID,?Id_nb,?Name,?Level,?Durability,?MaxDurability,?Condition,?MaxCondition,?Quality,?DPS_AF,?SPD_ABS,?Hand,?Type_Damage,?Object_Type,?Item_Type,?Color,?Emblem,?Effect,?Weight,?Model,?Extension,?Bonus,?Bonus1,?Bonus2,?Bonus3,?Bonus4,?Bonus5,?Bonus6,?Bonus7,?Bonus8,?Bonus9,?Bonus10,?ExtraBonus,?Bonus1Type,?Bonus2Type,?Bonus3Type,?Bonus4Type,?Bonus5Type,?Bonus6Type,?Bonus7Type,?Bonus8Type,?Bonus9Type,?Bonus10Type,?ExtraBonusType,?IsPickable,?IsDropable,?CanDropAsLoot,?IsTradable,?Platinum,?Gold,?Silver,?Copper,?MaxCount,?PackSize,?Charges,?MaxCharges,?Charges1,?MaxCharges1,?SpellID,?SpellID1,?ProcSpellID,?ProcSpellID1,?PoisonSpellID,?PoisonMaxCharges,?PoisonCharges,?Realm,?AllowedClasses)";
+            string SQL = "INSERT INTO itemtemplate (ItemTemplate_ID,Id_nb,Name,Level,Durability,MaxDurability,`Condition`,MaxCondition,Quality,DPS_AF,SPD_ABS,Hand,Type_Damage,Object_Type,Item_Type,Color,Emblem,Effect,Weight,Model,Extension,Bonus,Bonus1,Bonus2,Bonus3,Bonus4,Bonus5,Bonus6,Bonus7,Bonus8,Bonus9,Bonus10,ExtraBonus,Bonus1Type,Bonus2Type,Bonus3Type,Bonus4Type,Bonus5Type,Bonus6Type,Bonus7Type,Bonus8Type,Bonus9Type,Bonus10Type,ExtraBonusType,IsPickable,IsDropable,CanDropAsLoot,IsTradable,Price,MaxCount,PackSize,Charges,MaxCharges,Charges1,MaxCharges1,SpellID,SpellID1,ProcSpellID,ProcSpellID1,PoisonSpellID,PoisonMaxCharges,PoisonCharges,Realm,AllowedClasses) VALUES (?ItemTemplate_ID,?Id_nb,?Name,?Level,?Durability,?MaxDurability,?Condition,?MaxCondition,?Quality,?DPS_AF,?SPD_ABS,?Hand,?Type_Damage,?Object_Type,?Item_Type,?Color,?Emblem,?Effect,?Weight,?Model,?Extension,?Bonus,?Bonus1,?Bonus2,?Bonus3,?Bonus4,?Bonus5,?Bonus6,?Bonus7,?Bonus8,?Bonus9,?Bonus10,?ExtraBonus,?Bonus1Type,?Bonus2Type,?Bonus3Type,?Bonus4Type,?Bonus5Type,?Bonus6Type,?Bonus7Type,?Bonus8Type,?Bonus9Type,?Bonus10Type,?ExtraBonusType,?IsPickable,?IsDropable,?CanDropAsLoot,?IsTradable,?Price,?MaxCount,?PackSize,?Charges,?MaxCharges,?Charges1,?MaxCharges1,?SpellID,?SpellID1,?ProcSpellID,?ProcSpellID1,?PoisonSpellID,?PoisonMaxCharges,?PoisonCharges,?Realm,?AllowedClasses)";
 
 			cmd.CommandText = SQL;
 
@@ -1254,10 +1204,7 @@ namespace ItemCreator
 			cmd.Parameters.AddWithValue("?IsDropable",IsDropable);
 			cmd.Parameters.AddWithValue("?CanDropAsLoot",CanDropAsLoot);
 			cmd.Parameters.AddWithValue("?IsTradable",IsTradable);
-			cmd.Parameters.AddWithValue("?Platinum",Platinum);
-			cmd.Parameters.AddWithValue("?Gold",Gold);
-			cmd.Parameters.AddWithValue("?Silver",Silver);
-			cmd.Parameters.AddWithValue("?Copper",Copper);
+			cmd.Parameters.AddWithValue("?Price",Price);
 			cmd.Parameters.AddWithValue("?MaxCount",MaxCount);
 			cmd.Parameters.AddWithValue("?PackSize",PackSize);
 			cmd.Parameters.AddWithValue("?Charges",Charges);
@@ -1287,7 +1234,7 @@ namespace ItemCreator
             MySqlConnection con = _Connection;
 			MySqlCommand cmd = con.CreateCommand();
 
-            string SQL = "UPDATE itemtemplate SET Id_nb = ?Id_nb,Name = ?Name,Level = ?Level,Durability = ?Durability,MaxDurability = ?MaxDurability,`Condition` = ?Condition,MaxCondition = ?MaxCondition,Quality = ?Quality,DPS_AF = ?DPS_AF,SPD_ABS = ?SPD_ABS,Hand = ?Hand,Type_Damage = ?Type_Damage,Object_Type = ?Object_Type,Item_Type = ?Item_Type,Color = ?Color,Emblem = ?Emblem,Effect = ?Effect,Weight = ?Weight,Model = ?Model,Extension = ?Extension,Bonus = ?Bonus,Bonus1 = ?Bonus1,Bonus2 = ?Bonus2,Bonus3 = ?Bonus3,Bonus4 = ?Bonus4,Bonus5 = ?Bonus5,Bonus6 = ?Bonus6,Bonus7 = ?Bonus7,Bonus8 = ?Bonus8,Bonus9 = ?Bonus9,Bonus10 = ?Bonus10,ExtraBonus = ?ExtraBonus,Bonus1Type = ?Bonus1Type,Bonus2Type = ?Bonus2Type,Bonus3Type = ?Bonus3Type,Bonus4Type = ?Bonus4Type,Bonus5Type = ?Bonus5Type,Bonus6Type = ?Bonus6Type,Bonus7Type = ?Bonus7Type,Bonus8Type = ?Bonus8Type,Bonus9Type = ?Bonus9Type,Bonus10Type = ?Bonus10Type,ExtraBonusType = ?ExtraBonusType,IsPickable = ?IsPickable,IsDropable = ?IsDropable,CanDropAsLoot = ?CanDropAsLoot,IsTradable = ?IsTradable,Platinum = ?Platinum,Gold = ?Gold,Silver = ?Silver,Copper = ?Copper,MaxCount = ?MaxCount,PackSize = ?PackSize,Charges = ?Charges,MaxCharges = ?MaxCharges,Charges1 = ?Charges1,MaxCharges1 = ?MaxCharges1,SpellID = ?SpellID,SpellID1 = ?SpellID1,ProcSpellID = ?ProcSpellID,ProcSpellID1 = ?ProcSpellID1,PoisonSpellID = ?PoisonSpellID,PoisonMaxCharges = ?PoisonMaxCharges,PoisonCharges = ?PoisonCharges,Realm = ?Realm,AllowedClasses = ?AllowedClasses WHERE ItemTemplate_ID = ?ItemTemplate_ID;";
+            string SQL = "UPDATE itemtemplate SET Id_nb = ?Id_nb,Name = ?Name,Level = ?Level,Durability = ?Durability,MaxDurability = ?MaxDurability,`Condition` = ?Condition,MaxCondition = ?MaxCondition,Quality = ?Quality,DPS_AF = ?DPS_AF,SPD_ABS = ?SPD_ABS,Hand = ?Hand,Type_Damage = ?Type_Damage,Object_Type = ?Object_Type,Item_Type = ?Item_Type,Color = ?Color,Emblem = ?Emblem,Effect = ?Effect,Weight = ?Weight,Model = ?Model,Extension = ?Extension,Bonus = ?Bonus,Bonus1 = ?Bonus1,Bonus2 = ?Bonus2,Bonus3 = ?Bonus3,Bonus4 = ?Bonus4,Bonus5 = ?Bonus5,Bonus6 = ?Bonus6,Bonus7 = ?Bonus7,Bonus8 = ?Bonus8,Bonus9 = ?Bonus9,Bonus10 = ?Bonus10,ExtraBonus = ?ExtraBonus,Bonus1Type = ?Bonus1Type,Bonus2Type = ?Bonus2Type,Bonus3Type = ?Bonus3Type,Bonus4Type = ?Bonus4Type,Bonus5Type = ?Bonus5Type,Bonus6Type = ?Bonus6Type,Bonus7Type = ?Bonus7Type,Bonus8Type = ?Bonus8Type,Bonus9Type = ?Bonus9Type,Bonus10Type = ?Bonus10Type,ExtraBonusType = ?ExtraBonusType,IsPickable = ?IsPickable,IsDropable = ?IsDropable,CanDropAsLoot = ?CanDropAsLoot,IsTradable = ?IsTradable,Price = ?Price,MaxCount = ?MaxCount,PackSize = ?PackSize,Charges = ?Charges,MaxCharges = ?MaxCharges,Charges1 = ?Charges1,MaxCharges1 = ?MaxCharges1,SpellID = ?SpellID,SpellID1 = ?SpellID1,ProcSpellID = ?ProcSpellID,ProcSpellID1 = ?ProcSpellID1,PoisonSpellID = ?PoisonSpellID,PoisonMaxCharges = ?PoisonMaxCharges,PoisonCharges = ?PoisonCharges,Realm = ?Realm,AllowedClasses = ?AllowedClasses WHERE ItemTemplate_ID = ?ItemTemplate_ID;";
 
 			cmd.CommandText = SQL;
 
@@ -1339,10 +1286,7 @@ namespace ItemCreator
 			cmd.Parameters.AddWithValue("?IsDropable",IsDropable);
 			cmd.Parameters.AddWithValue("?CanDropAsLoot",CanDropAsLoot);
 			cmd.Parameters.AddWithValue("?IsTradable",IsTradable);
-			cmd.Parameters.AddWithValue("?Platinum",Platinum);
-			cmd.Parameters.AddWithValue("?Gold",Gold);
-			cmd.Parameters.AddWithValue("?Silver",Silver);
-			cmd.Parameters.AddWithValue("?Copper",Copper);
+			cmd.Parameters.AddWithValue("?Price",Price);
 			cmd.Parameters.AddWithValue("?MaxCount",MaxCount);
 			cmd.Parameters.AddWithValue("?PackSize",PackSize);
 			cmd.Parameters.AddWithValue("?Charges",Charges);
@@ -1370,7 +1314,7 @@ namespace ItemCreator
             MySqlConnection con = _Connection;
             MySqlCommand cmd = con.CreateCommand();
 
-            string SQL = "UPDATE itemtemplate SET Name = ?Name,Level = ?Level,Durability = ?Durability,MaxDurability = ?MaxDurability,`Condition` = ?Condition,MaxCondition = ?MaxCondition,Quality = ?Quality,DPS_AF = ?DPS_AF,SPD_ABS = ?SPD_ABS,Hand = ?Hand,Type_Damage = ?Type_Damage,Object_Type = ?Object_Type,Item_Type = ?Item_Type,Color = ?Color,Emblem = ?Emblem,Effect = ?Effect,Weight = ?Weight,Model = ?Model,Extension = ?Extension,Bonus = ?Bonus,Bonus1 = ?Bonus1,Bonus2 = ?Bonus2,Bonus3 = ?Bonus3,Bonus4 = ?Bonus4,Bonus5 = ?Bonus5,Bonus6 = ?Bonus6,Bonus7 = ?Bonus7,Bonus8 = ?Bonus8,Bonus9 = ?Bonus9,Bonus10 = ?Bonus10,ExtraBonus = ?ExtraBonus,Bonus1Type = ?Bonus1Type,Bonus2Type = ?Bonus2Type,Bonus3Type = ?Bonus3Type,Bonus4Type = ?Bonus4Type,Bonus5Type = ?Bonus5Type,Bonus6Type = ?Bonus6Type,Bonus7Type = ?Bonus7Type,Bonus8Type = ?Bonus8Type,Bonus9Type = ?Bonus9Type,Bonus10Type = ?Bonus10Type,ExtraBonusType = ?ExtraBonusType,IsPickable = ?IsPickable,IsDropable = ?IsDropable,CanDropAsLoot = ?CanDropAsLoot,IsTradable = ?IsTradable,Platinum = ?Platinum,Gold = ?Gold,Silver = ?Silver,Copper = ?Copper,MaxCount = ?MaxCount,PackSize = ?PackSize,Charges = ?Charges,MaxCharges = ?MaxCharges,Charges1 = ?Charges1,MaxCharges1 = ?MaxCharges1,SpellID = ?SpellID,SpellID1 = ?SpellID1,ProcSpellID = ?ProcSpellID,ProcSpellID1 = ?ProcSpellID1,PoisonSpellID = ?PoisonSpellID,PoisonMaxCharges = ?PoisonMaxCharges,PoisonCharges = ?PoisonCharges,Realm = ?Realm,AllowedClasses = ?AllowedClasses WHERE Id_nb = ?Id_nb;";
+            string SQL = "UPDATE itemtemplate SET Name = ?Name,Level = ?Level,Durability = ?Durability,MaxDurability = ?MaxDurability,`Condition` = ?Condition,MaxCondition = ?MaxCondition,Quality = ?Quality,DPS_AF = ?DPS_AF,SPD_ABS = ?SPD_ABS,Hand = ?Hand,Type_Damage = ?Type_Damage,Object_Type = ?Object_Type,Item_Type = ?Item_Type,Color = ?Color,Emblem = ?Emblem,Effect = ?Effect,Weight = ?Weight,Model = ?Model,Extension = ?Extension,Bonus = ?Bonus,Bonus1 = ?Bonus1,Bonus2 = ?Bonus2,Bonus3 = ?Bonus3,Bonus4 = ?Bonus4,Bonus5 = ?Bonus5,Bonus6 = ?Bonus6,Bonus7 = ?Bonus7,Bonus8 = ?Bonus8,Bonus9 = ?Bonus9,Bonus10 = ?Bonus10,ExtraBonus = ?ExtraBonus,Bonus1Type = ?Bonus1Type,Bonus2Type = ?Bonus2Type,Bonus3Type = ?Bonus3Type,Bonus4Type = ?Bonus4Type,Bonus5Type = ?Bonus5Type,Bonus6Type = ?Bonus6Type,Bonus7Type = ?Bonus7Type,Bonus8Type = ?Bonus8Type,Bonus9Type = ?Bonus9Type,Bonus10Type = ?Bonus10Type,ExtraBonusType = ?ExtraBonusType,IsPickable = ?IsPickable,IsDropable = ?IsDropable,CanDropAsLoot = ?CanDropAsLoot,IsTradable = ?IsTradable,Price = ?Price,MaxCount = ?MaxCount,PackSize = ?PackSize,Charges = ?Charges,MaxCharges = ?MaxCharges,Charges1 = ?Charges1,MaxCharges1 = ?MaxCharges1,SpellID = ?SpellID,SpellID1 = ?SpellID1,ProcSpellID = ?ProcSpellID,ProcSpellID1 = ?ProcSpellID1,PoisonSpellID = ?PoisonSpellID,PoisonMaxCharges = ?PoisonMaxCharges,PoisonCharges = ?PoisonCharges,Realm = ?Realm,AllowedClasses = ?AllowedClasses WHERE Id_nb = ?Id_nb;";
 
             cmd.CommandText = SQL;
 
@@ -1422,10 +1366,7 @@ namespace ItemCreator
             cmd.Parameters.AddWithValue("?IsDropable", IsDropable);
             cmd.Parameters.AddWithValue("?CanDropAsLoot", CanDropAsLoot);
             cmd.Parameters.AddWithValue("?IsTradable", IsTradable);
-            cmd.Parameters.AddWithValue("?Platinum", Platinum);
-            cmd.Parameters.AddWithValue("?Gold", Gold);
-            cmd.Parameters.AddWithValue("?Silver", Silver);
-            cmd.Parameters.AddWithValue("?Copper", Copper);
+            cmd.Parameters.AddWithValue("?Price", Price);
             cmd.Parameters.AddWithValue("?MaxCount", MaxCount);
             cmd.Parameters.AddWithValue("?PackSize", PackSize);
             cmd.Parameters.AddWithValue("?Charges", Charges);
@@ -1501,7 +1442,7 @@ namespace ItemCreator
 
         public string getInsertSQL()
         {
-            string sql = "INSERT INTO itemtemplate (ItemTemplate_ID,Id_nb,Name,Level,Durability,MaxDurability,`Condition`,MaxCondition,Quality,DPS_AF,SPD_ABS,Hand,Type_Damage,Object_Type,Item_Type,Color,Emblem,Effect,Weight,Model,Extension,Bonus,Bonus1,Bonus2,Bonus3,Bonus4,Bonus5,Bonus6,Bonus7,Bonus8,Bonus9,Bonus10,ExtraBonus,Bonus1Type,Bonus2Type,Bonus3Type,Bonus4Type,Bonus5Type,Bonus6Type,Bonus7Type,Bonus8Type,Bonus9Type,Bonus10Type,ExtraBonusType,IsPickable,IsDropable,CanDropAsLoot,IsTradable,Platinum,Gold,Silver,Copper,MaxCount,PackSize,Charges,MaxCharges,Charges1,MaxCharges1,SpellID,SpellID1,ProcSpellID,ProcSpellID1,PoisonSpellID,PoisonMaxCharges,PoisonCharges,Realm) VALUES ('?ItemTemplate_ID', '?Id_nb', '?Name', '?Level', '?Durability', '?MaxDurability', '?Condition', '?MaxCondition', '?Quality', '?DPS_AF', '?SPD_ABS', '?Hand', '?Type_Damage', '?Object_Type', '?Item_Type', '?Color', '?Emblem', '?Effect', '?Weight', '?Model', '?Extension', '?Bonus', '?Bonus1', '?Bonus2', '?Bonus3', '?Bonus4', '?Bonus5', '?Bonus6', '?Bonus7', '?Bonus8', '?Bonus9', '?Bonus10', '?ExtraBonus', '?Bonus1Type', '?Bonus2Type', '?Bonus3Type', '?Bonus4Type', '?Bonus5Type', '?Bonus6Type', '?Bonus7Type', '?Bonus8Type', '?Bonus9Type', '?Bonus10Type', '?ExtraBonusType', '?IsPickable', '?IsDropable', '?CanDropAsLoot', '?IsTradable', '?Platinum', '?Gold', '?Silver', '?Copper', '?MaxCount', '?PackSize', '?Charges', '?MaxCharges', '?Charges1', '?MaxCharges1', '?SpellID', '?SpellID1', '?ProcSpellID', '?ProcSpellID1', '?PoisonSpellID', '?PoisonMaxCharges', '?PoisonCharges', '?Realm', '?AllowedClasses')";
+            string sql = "INSERT INTO itemtemplate (ItemTemplate_ID,Id_nb,Name,Level,Durability,MaxDurability,`Condition`,MaxCondition,Quality,DPS_AF,SPD_ABS,Hand,Type_Damage,Object_Type,Item_Type,Color,Emblem,Effect,Weight,Model,Extension,Bonus,Bonus1,Bonus2,Bonus3,Bonus4,Bonus5,Bonus6,Bonus7,Bonus8,Bonus9,Bonus10,ExtraBonus,Bonus1Type,Bonus2Type,Bonus3Type,Bonus4Type,Bonus5Type,Bonus6Type,Bonus7Type,Bonus8Type,Bonus9Type,Bonus10Type,ExtraBonusType,IsPickable,IsDropable,CanDropAsLoot,IsTradable,Price,MaxCount,PackSize,Charges,MaxCharges,Charges1,MaxCharges1,SpellID,SpellID1,ProcSpellID,ProcSpellID1,PoisonSpellID,PoisonMaxCharges,PoisonCharges,Realm) VALUES ('?ItemTemplate_ID', '?Id_nb', '?Name', '?Level', '?Durability', '?MaxDurability', '?Condition', '?MaxCondition', '?Quality', '?DPS_AF', '?SPD_ABS', '?Hand', '?Type_Damage', '?Object_Type', '?Item_Type', '?Color', '?Emblem', '?Effect', '?Weight', '?Model', '?Extension', '?Bonus', '?Bonus1', '?Bonus2', '?Bonus3', '?Bonus4', '?Bonus5', '?Bonus6', '?Bonus7', '?Bonus8', '?Bonus9', '?Bonus10', '?ExtraBonus', '?Bonus1Type', '?Bonus2Type', '?Bonus3Type', '?Bonus4Type', '?Bonus5Type', '?Bonus6Type', '?Bonus7Type', '?Bonus8Type', '?Bonus9Type', '?Bonus10Type', '?ExtraBonusType', '?IsPickable', '?IsDropable', '?CanDropAsLoot', '?IsTradable', '?Price', '?MaxCount', '?PackSize', '?Charges', '?MaxCharges', '?Charges1', '?MaxCharges1', '?SpellID', '?SpellID1', '?ProcSpellID', '?ProcSpellID1', '?PoisonSpellID', '?PoisonMaxCharges', '?PoisonCharges', '?Realm', '?AllowedClasses')";
 
             sql = sql.Replace("'?ItemTemplate_ID'", "'"+ItemTemplate_ID+"'");
             sql = sql.Replace("'?Id_nb'", "'"+Id_nb+"'");
@@ -1551,10 +1492,7 @@ namespace ItemCreator
             sql = sql.Replace("'?IsDropable'", "'"+Convert.ToInt32(IsDropable)+"'");
             sql = sql.Replace("'?CanDropAsLoot'", "'"+Convert.ToInt32(CanDropAsLoot)+"'");
             sql = sql.Replace("'?IsTradable'", "'"+Convert.ToInt32(IsTradable)+"'");
-            sql = sql.Replace("'?Platinum'", "'"+Platinum+"'");
-            sql = sql.Replace("'?Gold'", "'"+Gold+"'");
-            sql = sql.Replace("'?Silver'", "'"+Silver+"'");
-            sql = sql.Replace("'?Copper'", "'"+Copper+"'");
+            sql = sql.Replace("'?Price'", "'"+Price+"'");
             sql = sql.Replace("'?MaxCount'", "'"+MaxCount+"'");
             sql = sql.Replace("'?PackSize'", "'"+PackSize+"'");
             sql = sql.Replace("'?Charges'", "'"+Charges+"'");
@@ -1576,7 +1514,7 @@ namespace ItemCreator
 
         public string getUpdateSQL()
         {
-            string sql = "UPDATE itemtemplate SET Id_nb = '?Id_nb', Name = '?Name', Level = '?Level', Durability = '?Durability', MaxDurability = '?MaxDurability', `Condition` = '?Condition', MaxCondition = '?MaxCondition', Quality = '?Quality', DPS_AF = '?DPS_AF', SPD_ABS = '?SPD_ABS', Hand = '?Hand', Type_Damage = '?Type_Damage', Object_Type = '?Object_Type', Item_Type = '?Item_Type', Color = '?Color', Emblem = '?Emblem', Effect = '?Effect', Weight = '?Weight', Model = '?Model', Extension = '?Extension', Bonus = '?Bonus', Bonus1 = '?Bonus1', Bonus2 = '?Bonus2', Bonus3 = '?Bonus3', Bonus4 = '?Bonus4', Bonus5 = '?Bonus5', Bonus6 = '?Bonus6', Bonus7 = '?Bonus7', Bonus8 = '?Bonus8', Bonus9 = '?Bonus9', Bonus10 = '?Bonus10', ExtraBonus = '?ExtraBonus', Bonus1Type = '?Bonus1Type', Bonus2Type = '?Bonus2Type', Bonus3Type = '?Bonus3Type', Bonus4Type = '?Bonus4Type', Bonus5Type = '?Bonus5Type', Bonus6Type = '?Bonus6Type', Bonus7Type = '?Bonus7Type', Bonus8Type = '?Bonus8Type', Bonus9Type = '?Bonus9Type', Bonus10Type = '?Bonus10Type', ExtraBonusType = '?ExtraBonusType', IsPickable = '?IsPickable', IsDropable = '?IsDropable', CanDropAsLoot = '?CanDropAsLoot', IsTradable = '?IsTradable', Platinum = '?Platinum', Gold = '?Gold', Silver = '?Silver', Copper = '?Copper', MaxCount = '?MaxCount', PackSize = '?PackSize', Charges = '?Charges', MaxCharges = '?MaxCharges', Charges1 = '?Charges1', MaxCharges1 = '?MaxCharges1', SpellID = '?SpellID', SpellID1 = '?SpellID1', ProcSpellID = '?ProcSpellID', ProcSpellID1 = '?ProcSpellID1', PoisonSpellID = '?PoisonSpellID', PoisonMaxCharges = '?PoisonMaxCharges', PoisonCharges = '?PoisonCharges', Realm = '?Realm', AllowedClasses = '?AllowedClasses' WHERE ItemTemplate_ID = '?ItemTemplate_ID'";
+            string sql = "UPDATE itemtemplate SET Id_nb = '?Id_nb', Name = '?Name', Level = '?Level', Durability = '?Durability', MaxDurability = '?MaxDurability', `Condition` = '?Condition', MaxCondition = '?MaxCondition', Quality = '?Quality', DPS_AF = '?DPS_AF', SPD_ABS = '?SPD_ABS', Hand = '?Hand', Type_Damage = '?Type_Damage', Object_Type = '?Object_Type', Item_Type = '?Item_Type', Color = '?Color', Emblem = '?Emblem', Effect = '?Effect', Weight = '?Weight', Model = '?Model', Extension = '?Extension', Bonus = '?Bonus', Bonus1 = '?Bonus1', Bonus2 = '?Bonus2', Bonus3 = '?Bonus3', Bonus4 = '?Bonus4', Bonus5 = '?Bonus5', Bonus6 = '?Bonus6', Bonus7 = '?Bonus7', Bonus8 = '?Bonus8', Bonus9 = '?Bonus9', Bonus10 = '?Bonus10', ExtraBonus = '?ExtraBonus', Bonus1Type = '?Bonus1Type', Bonus2Type = '?Bonus2Type', Bonus3Type = '?Bonus3Type', Bonus4Type = '?Bonus4Type', Bonus5Type = '?Bonus5Type', Bonus6Type = '?Bonus6Type', Bonus7Type = '?Bonus7Type', Bonus8Type = '?Bonus8Type', Bonus9Type = '?Bonus9Type', Bonus10Type = '?Bonus10Type', ExtraBonusType = '?ExtraBonusType', IsPickable = '?IsPickable', IsDropable = '?IsDropable', CanDropAsLoot = '?CanDropAsLoot', IsTradable = '?IsTradable', Price = '?Price', MaxCount = '?MaxCount', PackSize = '?PackSize', Charges = '?Charges', MaxCharges = '?MaxCharges', Charges1 = '?Charges1', MaxCharges1 = '?MaxCharges1', SpellID = '?SpellID', SpellID1 = '?SpellID1', ProcSpellID = '?ProcSpellID', ProcSpellID1 = '?ProcSpellID1', PoisonSpellID = '?PoisonSpellID', PoisonMaxCharges = '?PoisonMaxCharges', PoisonCharges = '?PoisonCharges', Realm = '?Realm', AllowedClasses = '?AllowedClasses' WHERE ItemTemplate_ID = '?ItemTemplate_ID'";
 
             sql = sql.Replace("'?ItemTemplate_ID'", "'" + ItemTemplate_ID + "'");
             sql = sql.Replace("'?Id_nb'", "'" + Id_nb + "'");
@@ -1626,10 +1564,7 @@ namespace ItemCreator
             sql = sql.Replace("'?IsDropable'", "'" + Convert.ToInt32(IsDropable) + "'");
             sql = sql.Replace("'?CanDropAsLoot'", "'" + Convert.ToInt32(CanDropAsLoot) + "'");
             sql = sql.Replace("'?IsTradable'", "'" + Convert.ToInt32(IsTradable) + "'");
-            sql = sql.Replace("'?Platinum'", "'" + Platinum + "'");
-            sql = sql.Replace("'?Gold'", "'" + Gold + "'");
-            sql = sql.Replace("'?Silver'", "'" + Silver + "'");
-            sql = sql.Replace("'?Copper'", "'" + Copper + "'");
+            sql = sql.Replace("'?Price'", "'" + Price + "'");
             sql = sql.Replace("'?MaxCount'", "'" + MaxCount + "'");
             sql = sql.Replace("'?PackSize'", "'" + PackSize + "'");
             sql = sql.Replace("'?Charges'", "'" + Charges + "'");
@@ -1651,7 +1586,7 @@ namespace ItemCreator
 
         public string getUpdateByKeynameSQL()
         {
-            string sql = "UPDATE itemtemplate SET Name = '?Name', Level = '?Level', Durability = '?Durability', MaxDurability = '?MaxDurability', `Condition` = '?Condition', MaxCondition = '?MaxCondition', Quality = '?Quality', DPS_AF = '?DPS_AF', SPD_ABS = '?SPD_ABS', Hand = '?Hand', Type_Damage = '?Type_Damage', Object_Type = '?Object_Type', Item_Type = '?Item_Type', Color = '?Color', Emblem = '?Emblem', Effect = '?Effect', Weight = '?Weight', Model = '?Model', Extension = '?Extension', Bonus = '?Bonus', Bonus1 = '?Bonus1', Bonus2 = '?Bonus2', Bonus3 = '?Bonus3', Bonus4 = '?Bonus4', Bonus5 = '?Bonus5', Bonus6 = '?Bonus6', Bonus7 = '?Bonus7', Bonus8 = '?Bonus8', Bonus9 = '?Bonus9', Bonus10 = '?Bonus10', ExtraBonus = '?ExtraBonus', Bonus1Type = '?Bonus1Type', Bonus2Type = '?Bonus2Type', Bonus3Type = '?Bonus3Type', Bonus4Type = '?Bonus4Type', Bonus5Type = '?Bonus5Type', Bonus6Type = '?Bonus6Type', Bonus7Type = '?Bonus7Type', Bonus8Type = '?Bonus8Type', Bonus9Type = '?Bonus9Type', Bonus10Type = '?Bonus10Type', ExtraBonusType = '?ExtraBonusType', IsPickable = '?IsPickable', IsDropable = '?IsDropable', CanDropAsLoot = '?CanDropAsLoot', IsTradable = '?IsTradable', Platinum = '?Platinum', Gold = '?Gold', Silver = '?Silver', Copper = '?Copper', MaxCount = '?MaxCount', PackSize = '?PackSize', Charges = '?Charges', MaxCharges = '?MaxCharges', Charges1 = '?Charges1', MaxCharges1 = '?MaxCharges1', SpellID = '?SpellID', SpellID1 = '?SpellID1', ProcSpellID = '?ProcSpellID', ProcSpellID1 = '?ProcSpellID1', PoisonSpellID = '?PoisonSpellID', PoisonMaxCharges = '?PoisonMaxCharges', PoisonCharges = '?PoisonCharges', Realm = '?Realm', AllowedClasses = '?AllowedClasses' WHERE Id_nb = '?Id_nb'";
+            string sql = "UPDATE itemtemplate SET Name = '?Name', Level = '?Level', Durability = '?Durability', MaxDurability = '?MaxDurability', `Condition` = '?Condition', MaxCondition = '?MaxCondition', Quality = '?Quality', DPS_AF = '?DPS_AF', SPD_ABS = '?SPD_ABS', Hand = '?Hand', Type_Damage = '?Type_Damage', Object_Type = '?Object_Type', Item_Type = '?Item_Type', Color = '?Color', Emblem = '?Emblem', Effect = '?Effect', Weight = '?Weight', Model = '?Model', Extension = '?Extension', Bonus = '?Bonus', Bonus1 = '?Bonus1', Bonus2 = '?Bonus2', Bonus3 = '?Bonus3', Bonus4 = '?Bonus4', Bonus5 = '?Bonus5', Bonus6 = '?Bonus6', Bonus7 = '?Bonus7', Bonus8 = '?Bonus8', Bonus9 = '?Bonus9', Bonus10 = '?Bonus10', ExtraBonus = '?ExtraBonus', Bonus1Type = '?Bonus1Type', Bonus2Type = '?Bonus2Type', Bonus3Type = '?Bonus3Type', Bonus4Type = '?Bonus4Type', Bonus5Type = '?Bonus5Type', Bonus6Type = '?Bonus6Type', Bonus7Type = '?Bonus7Type', Bonus8Type = '?Bonus8Type', Bonus9Type = '?Bonus9Type', Bonus10Type = '?Bonus10Type', ExtraBonusType = '?ExtraBonusType', IsPickable = '?IsPickable', IsDropable = '?IsDropable', CanDropAsLoot = '?CanDropAsLoot', IsTradable = '?IsTradable', Price = '?Price', MaxCount = '?MaxCount', PackSize = '?PackSize', Charges = '?Charges', MaxCharges = '?MaxCharges', Charges1 = '?Charges1', MaxCharges1 = '?MaxCharges1', SpellID = '?SpellID', SpellID1 = '?SpellID1', ProcSpellID = '?ProcSpellID', ProcSpellID1 = '?ProcSpellID1', PoisonSpellID = '?PoisonSpellID', PoisonMaxCharges = '?PoisonMaxCharges', PoisonCharges = '?PoisonCharges', Realm = '?Realm', AllowedClasses = '?AllowedClasses' WHERE Id_nb = '?Id_nb'";
 
             sql = sql.Replace("'?ItemTemplate_ID'", "'" + ItemTemplate_ID + "'");
             sql = sql.Replace("'?Id_nb'", "'" + Id_nb + "'");
@@ -1701,10 +1636,7 @@ namespace ItemCreator
             sql = sql.Replace("'?IsDropable'", "'" + Convert.ToInt32(IsDropable) + "'");
             sql = sql.Replace("'?CanDropAsLoot'", "'" + Convert.ToInt32(CanDropAsLoot) + "'");
             sql = sql.Replace("'?IsTradable'", "'" + Convert.ToInt32(IsTradable) + "'");
-            sql = sql.Replace("'?Platinum'", "'" + Platinum + "'");
-            sql = sql.Replace("'?Gold'", "'" + Gold + "'");
-            sql = sql.Replace("'?Silver'", "'" + Silver + "'");
-            sql = sql.Replace("'?Copper'", "'" + Copper + "'");
+            sql = sql.Replace("'?Price'", "'" + Price + "'");
             sql = sql.Replace("'?MaxCount'", "'" + MaxCount + "'");
             sql = sql.Replace("'?PackSize'", "'" + PackSize + "'");
             sql = sql.Replace("'?Charges'", "'" + Charges + "'");
@@ -1778,10 +1710,7 @@ namespace ItemCreator
             if (IsDropable.ToString() != "0" && IsDropable.ToString() != "") code += "   " + Id_nb + ".IsDropable = " + IsDropable.ToString().ToLower() + ";" + Environment.NewLine;
             if (CanDropAsLoot.ToString() != "0" && CanDropAsLoot.ToString() != "") code += "   " + Id_nb + ".CanDropAsLoot = " + CanDropAsLoot.ToString().ToLower() + ";" + Environment.NewLine;
             if (IsTradable.ToString() != "0" && IsTradable.ToString() != "") code += "   " + Id_nb + ".IsTradable = " + IsTradable.ToString().ToLower() + ";" + Environment.NewLine;
-            if (Platinum.ToString() != "0" && Platinum.ToString() != "") code += "   " + Id_nb + ".Platinum = " + Platinum + ";" + Environment.NewLine;
-            if (Gold.ToString() != "0" && Gold.ToString() != "") code += "   " + Id_nb + ".Gold = " + Gold + ";" + Environment.NewLine;
-            if (Silver.ToString() != "0" && Silver.ToString() != "") code += "   " + Id_nb + ".Silver = " + Silver + ";" + Environment.NewLine;
-            if (Copper.ToString() != "0" && Copper.ToString() != "") code += "   " + Id_nb + ".Copper = " + Copper + ";" + Environment.NewLine;
+            if (Price.ToString() != "0" && Price.ToString() != "") code += "   " + Id_nb + ".Price = " + Price + ";" + Environment.NewLine;
             if (MaxCount.ToString() != "0" && MaxCount.ToString() != "") code += "   " + Id_nb + ".MaxCount = " + MaxCount + ";" + Environment.NewLine;
             if (PackSize.ToString() != "0" && PackSize.ToString() != "") code += "   " + Id_nb + ".PackSize = " + PackSize + ";" + Environment.NewLine;
             if (Charges.ToString() != "0" && Charges.ToString() != "") code += "   " + Id_nb + ".Charges = " + Charges + ";" + Environment.NewLine;

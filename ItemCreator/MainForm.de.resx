@@ -638,17 +638,8 @@
   <data name="item_quality.Location" type="System.Drawing.Point, System.Drawing">
     <value>81, 23</value>
   </data>
-  <data name="item_sell_copper.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="item_sell_price.Location" type="System.Drawing.Point, System.Drawing">
     <value>241, 49</value>
-  </data>
-  <data name="item_sell_silver.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 49</value>
-  </data>
-  <data name="item_sell_gold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 49</value>
-  </data>
-  <data name="item_sell_platinum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 49</value>
   </data>
   <data name="item_classes.Location" type="System.Drawing.Point, System.Drawing">
     <value>81, 101</value>

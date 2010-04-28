@@ -662,52 +662,16 @@
   <data name="item_quality.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="item_sell_copper.Error" xml:space="preserve">
+  <data name="item_price.Error" xml:space="preserve">
     <value />
   </data>
-  <data name="item_sell_copper.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+  <data name="item_price.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
   </data>
-  <data name="item_sell_copper.IconPadding" type="System.Int32, mscorlib">
+  <data name="item_price.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="item_sell_copper.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="item_sell_silver.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="item_sell_silver.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="item_sell_silver.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="item_sell_silver.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="item_sell_gold.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="item_sell_gold.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="item_sell_gold.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="item_sell_gold.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="item_sell_platinum.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="item_sell_platinum.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="item_sell_platinum.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="item_sell_platinum.ToolTip" xml:space="preserve">
+  <data name="item_price.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="item_classes.Error" xml:space="preserve">
