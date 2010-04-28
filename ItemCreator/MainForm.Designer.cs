@@ -99,6 +99,7 @@
 			this.item_visible_effect = new System.Windows.Forms.ComboBox();
 			this.item_hand = new System.Windows.Forms.ComboBox();
 			this.item_damagetype = new System.Windows.Forms.ComboBox();
+			this.label21 = new System.Windows.Forms.Label();
 			this.item_stacksize = new RegExControls.RegExTextBox();
 			this.item_buystacksize = new RegExControls.RegExTextBox();
 			this.item_quality = new RegExControls.RegExTextBox();
@@ -236,7 +237,6 @@
 			this.checkItemButton = new System.Windows.Forms.ToolStripButton();
 			this.versionInformation = new System.Windows.Forms.Label();
 			this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-			this.label21 = new System.Windows.Forms.Label();
 			tabLootDrop = new System.Windows.Forms.TabControl();
 			groupBox4 = new System.Windows.Forms.GroupBox();
 			label33 = new System.Windows.Forms.Label();
@@ -500,6 +500,11 @@
 			groupBox2.Name = "groupBox2";
 			groupBox2.TabStop = false;
 			// 
+			// label21
+			// 
+			resources.ApplyResources(this.label21, "label21");
+			this.label21.Name = "label21";
+			// 
 			// item_stacksize
 			// 
 			this.item_stacksize.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.item, "ItemTemplate.MaxCount", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -635,7 +640,6 @@
 			// 
 			// bonus_level
 			// 
-			this.bonus_level.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.item, "ItemTemplate.Quality", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
 			resources.ApplyResources(this.bonus_level, "bonus_level");
 			this.bonus_level.Name = "bonus_level";
 			this.bonus_level.Regular_Expression = "^[0-9]*$";
@@ -654,7 +658,6 @@
 			// 
 			// level_requirement
 			// 
-			this.level_requirement.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.item, "ItemTemplate.Quality", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
 			resources.ApplyResources(this.level_requirement, "level_requirement");
 			this.level_requirement.Name = "level_requirement";
 			this.level_requirement.Regular_Expression = "^[0-9]*$";
@@ -1895,11 +1898,6 @@
 			// errorProvider
 			// 
 			this.errorProvider.ContainerControl = this;
-			// 
-			// label21
-			// 
-			resources.ApplyResources(this.label21, "label21");
-			this.label21.Name = "label21";
 			// 
 			// MainForm
 			// 
