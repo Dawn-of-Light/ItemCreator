@@ -297,8 +297,7 @@ namespace ItemCreator
 
             this.loading_panel.Visible = true;
 
-            string base_url = @"http://dev.dolserver.net/models/items";
-            base_url += "/" + row.Category + "/" + row.ID + ".jpg";
+			string base_url = @"http://dev.dolserver.net/models/items/" + row.ID + ".jpg";
 
             this.model_preview_picturebox.ImageLocation = base_url;
             this.current_loaded_image = row.ID;
