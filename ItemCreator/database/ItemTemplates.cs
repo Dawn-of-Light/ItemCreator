@@ -293,7 +293,7 @@ namespace ItemCreator.database {
             }
 
             string code;
-            code = "INSERT INTO " + mysqlRow.ItemTemplateTable + " (" + columnsSQL + ") VALUES (" + dataSQL + ")";
+            code = "REPLACE INTO " + mysqlRow.ItemTemplateTable + " (" + columnsSQL + ") VALUES (" + dataSQL + ")";
 
             return code;
         }
