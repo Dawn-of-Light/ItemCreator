@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
 using ICSharpCode.SharpZipLib.Zip;
@@ -11,8 +12,8 @@ namespace ItemCreatorUpdater
 {
     public partial class UpdaterMainForm : Form
     {
-        private string zipfile = Application.StartupPath + "//" + "ItemCreator.zip";
-        private string itemcreatorExe = Application.StartupPath + "//" + "ItemCreator.exe";
+        private string zipfile = Application.StartupPath + Path.DirectorySeparatorChar + "ItemCreator.zip";
+        private string itemcreatorExe = Application.StartupPath +  Path.DirectorySeparatorChar + "ItemCreator.exe";
         private bool checksDone = false;
 
         public UpdaterMainForm()

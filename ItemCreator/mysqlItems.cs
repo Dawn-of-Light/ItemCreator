@@ -46,7 +46,7 @@ namespace ItemCreator
                 string countSQL = "SELECT count(*) FROM " + this.mainForm.mysqlRow.ItemTemplateTable + " WHERE 1 ";
                 string addingSQL = "";
 
-                if (this.itemName.Text != "") addingSQL += " AND Name LIKE '%" + this.itemName.Text + "%' ";
+                if (this.itemName.Text != "") addingSQL += " AND " + this.comboSearchType.Text + " LIKE '%" + this.itemName.Text + "%' ";
 
                 if (addingSQL != "")
                 {

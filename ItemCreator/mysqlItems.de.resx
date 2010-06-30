@@ -120,10 +120,16 @@
   <data name="searchButton.Text" xml:space="preserve">
     <value>suchen</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="itemName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 13</value>
+  </data>
+  <data name="itemName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 20</value>
+  </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Suche</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="selectItemButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>492, 538</value>
   </data>
