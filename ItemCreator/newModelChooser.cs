@@ -297,7 +297,7 @@ namespace ItemCreator
 
             this.loading_panel.Visible = true;
 
-			string base_url = @"http://herald.uthgard.net/daoc/list.php?img=items|" + row.ID;
+			string base_url = @"http://www.dolserver.net/models/Models/items/" + row.ID + ".jpg";
 
             this.model_preview_picturebox.ImageLocation = base_url;
             this.current_loaded_image = row.ID;
